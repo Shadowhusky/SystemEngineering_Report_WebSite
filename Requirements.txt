@@ -1,0 +1,20 @@
+Project website to Moodle, including 
+Home, 
+requirements, 
+research, 
+HCI,
+Prototype, 
+Achievement, 
+Plan for term 2, 
+Appendices
+
+Website Structure Term_2
+▪ Home
+▪ Requirements
+▪ Research
+▪ Algorithms (if applicable)
+▪ HCI
+▪ Design
+▪ Testing
+▪ Evaluation
+▪ Appendices
