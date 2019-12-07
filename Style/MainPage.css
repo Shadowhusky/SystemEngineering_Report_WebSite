@@ -49,16 +49,16 @@
 		opacity: 0.95;
 		z-index: 2;
 		position: absolute;
-		width: 30%;
+		width: 25%;
 		left: 35%;
-		top: 15%;
+		top: 20%;
 	}
 	#Prototype_Watch_2{
 		z-index: 1;
 		position: absolute;
-		width: 30%;
-		left: 55%;
-		top: 15%;
+		width: 28%;
+		left: 53%;
+		top: 21%;
 	}
 	.Background_Appendix {
 		opacity: 0.5;
@@ -96,7 +96,7 @@
 		font-family: Microsoft Yi Baiti;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 35px;
+		font-size: 1.3vw;
 		color: rgba(255,255,255,1);
 	}
 	#Research {
@@ -110,7 +110,7 @@
 		font-family: Microsoft Yi Baiti;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 35px;
+		font-size: 1.3vw;
 		color: rgba(255,255,255,1);
 	}
 	#HCI {
@@ -124,7 +124,7 @@
 		font-family: Microsoft Yi Baiti;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 35px;
+		font-size: 1.3vw;
 		color: rgba(255,255,255,1);
 	}
 	#Prototype {
@@ -138,7 +138,7 @@
 		font-family: Microsoft Yi Baiti;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 35px;
+		font-size: 1.3vw;
 		color: rgba(255,255,255,1);
 	}
 	#Achievement {
@@ -152,7 +152,7 @@
 		font-family: Microsoft Yi Baiti;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 35px;
+		font-size: 1.3vw;
 		color: rgba(255,255,255,1);
 	}
 	#Plan {
@@ -166,7 +166,7 @@
 		font-family: Microsoft Yi Baiti;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 35px;
+		font-size: 1.3vw;
 		color: rgba(255,255,255,1);
 	}
 	#active_2_3 {
