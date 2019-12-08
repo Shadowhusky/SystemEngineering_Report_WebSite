@@ -4,7 +4,13 @@
 	
 	function animateCSS(element, animationName, callback, spam)  //when spam == 1, the anime will be deleted after played.
 	{
-		const node = document.querySelector(element)
+		const node = document.querySelector(element);
+		
+		if(node == null)
+		{
+			console.log("Element '"+ element +"' not found_Animate");
+			return;
+		}
 		
 		//Allow multiple atrributes
 		var arrayOfNames = animationName.split(" ");
@@ -12,7 +18,7 @@
 		{
 			node.classList.add('animated', arrayOfNames[i]);
 		}
-		
+	 	
 		function handleAnimationEnd() {
 			for(let i in arrayOfNames)
 			{
@@ -31,7 +37,7 @@
 	
 	function changeVisiblility(element, to)
 	{
-		const node = document.querySelector(element)
+		const node = document.querySelector(element);
 		switch(to)
 		{
 			case 0:
@@ -70,6 +76,9 @@
 					node.classList.remove('animated', "faster");
 					animateCSS("#Appendix_"+index,"lostFocus faster",0,1);
 				});
+				
+				animateCSS("#prototype1_screen","flash fast",0,1);
+				animateCSS("#prototype2_screen","flash fast",0,1);
 		}
 		function playSecond()
 		{
