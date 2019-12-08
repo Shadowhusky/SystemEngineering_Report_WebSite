@@ -1,7 +1,10 @@
 //Script for Mainpage(Home)
 	var elementsLoaded = 0;
 	var elementsNeedToBeLoaded = 4;
-	
+	var main_Anime_Finished = false;
+	var selectedContent = 3;
+	var contentsBackground_Anime_Finished;
+
 	function animateCSS(element, animationName, callback, spam)  //when spam == 1, the anime will be deleted after played.
 	{
 		const node = document.querySelector(element);
@@ -53,7 +56,7 @@
 	{
 		elementsLoaded+=count;
 		if(elementsLoaded==elementsNeedToBeLoaded)
-		{
+		{	
 			elementsLoaded = 0;
 			playAnime_MainPageLoaded();
 		}
@@ -76,9 +79,7 @@
 					node.classList.remove('animated', "faster");
 					animateCSS("#Appendix_"+index,"lostFocus faster",0,1);
 				});
-				
-				animateCSS("#prototype1_screen","flash fast",0,1);
-				animateCSS("#prototype2_screen","flash fast",0,1);
+				main_Anime_Finished = true;
 		}
 		function playSecond()
 		{
@@ -107,4 +108,81 @@
 		const node = document.querySelector(element);
 		node.style["animation-delay"] = delay + "s";
 	}
-	
+
+	function showRearch()
+	{
+		if(main_Anime_Finished ==false || selectedContent == "Research" || document.querySelector("#Prototype_Watch_1").classList.contains("fadeInUp_Cust") == true)
+		{ 
+			return;
+		}
+
+		selectedContent = "Research";
+		//Zoom In the contents' background
+		changeVisiblility("#contentsBackground",1);
+		animateCSS("#contentsBackground","zoomIn slow",0,1);
+		//Fade out two displays of watch.
+		animateCSS("#Prototype_Watch_1","fadeOutDown fast",function(){
+			changeVisiblility("#Prototype_Watch_1",0);
+		},1);
+
+		animateCSS("#Prototype_Watch_2","fadeOutUp fast",function(){
+			changeVisiblility("#Prototype_Watch_2",0);
+		},1);
+
+
+	}
+
+	function showRearch()
+	{
+		if(main_Anime_Finished ==false || selectedContent == "Research" || document.querySelector("#Prototype_Watch_1").classList.contains("fadeInUp_Cust") == true)
+		{ 
+			return;
+		}
+
+		//Zoom In the contents' background
+		changeVisiblility("#contentsBackground",1);
+		animateCSS("#contentsBackground","zoomIn slow",0,1);
+		if(selectedContent == "Prototype")
+		{
+			//Fade out two displays of watch.
+			animateCSS("#Prototype_Watch_1","fadeOutDown fast",function(){
+				changeVisiblility("#Prototype_Watch_1",0);
+			},1);
+
+			animateCSS("#Prototype_Watch_2","fadeOutUp fast",function(){
+				changeVisiblility("#Prototype_Watch_2",0);
+			},1);
+		}
+		selectedContent = "Research";
+	}
+
+	function showContent(content)
+	{
+		if(	  main_Anime_Finished == false 
+			|| selectedContent == content 
+			|| contentsBackground_Anime_Finished == false 
+			|| document.querySelector("#Prototype_Watch_1").classList.contains("fadeInUp_Cust") == true)
+		{ 
+			return;
+		}
+
+		//Zoom In the contents' background
+
+		if(selectedContent == 3)
+		{
+			changeVisiblility("#contentsBackground",1);
+			//Fade out two displays of watch.
+			animateCSS("#Prototype_Watch_1","fadeOutDown fast",function(){
+				changeVisiblility("#Prototype_Watch_1",0);
+			},1);
+
+			animateCSS("#Prototype_Watch_2","fadeOutUp fast",function(){
+				changeVisiblility("#Prototype_Watch_2",0);
+			},1);
+		}
+		contentsBackground_Anime_Finished = false;
+		animateCSS("#contentsBackground","zoomIn slow",function(){
+			contentsBackground_Anime_Finished = true;
+		},1);
+		selectedContent = content;
+	}

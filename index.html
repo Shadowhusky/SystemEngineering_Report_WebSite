@@ -9,43 +9,49 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <title>Group16</title>
 <script type="text/javascript" src="Resources\Scripts\MainPage.js"></script>
+<script type="text/javascript" src="Resources\Scripts\Jquery.js"></script>
 <link rel="stylesheet" href="Resources\Style\animate.css">
 <link rel="stylesheet" type="text/css" href="Resources\Style\MainPage.css">
 </head>
 <body>
-<div id="MainPage" class="">
+<div id="MainPage" class="non-Selectable">
 
-	<image id="Background" src= "Background_Main.png" onload="elementLoaded(1)"></image>
+	<img id="Background" src= "Background_Main.png" onload="elementLoaded(1)">
 
-	<image id="Background_Watch" src= "BackgroundWatch.png" onload="elementLoaded(1)"></image>
+	<img id="Background_Watch" src= "BackgroundWatch.png" onload="elementLoaded(1)">
 	
-	<embed id="Prototype_Watch_1" src="Prototype_1.svg" type="image/svg+xml"  onload="elementLoaded(1)"/>
+	<object type="image/svg+xml" data="Prototype_1.svg" class="logo" id="Prototype_Watch_1" onload="elementLoaded(1)"></object>
 	
-	<embed id="Prototype_Watch_2" src="Prototype_2.svg" type="image/svg+xml"  onload="elementLoaded(1)"/>
+	<object type="image/svg+xml" data="Prototype_2.svg" class="logo" id="Prototype_Watch_2" onload="elementLoaded(1)"></object>
 	
 	<svg class="Background_Appendix">
 		<rect fill="rgba(33,33,33,1)" id="Background_Appendix">
 		</rect>
 	</svg>
 	<div id="Appendix">
-		<div class="Requirements non-Selectable" id="Appendix_0">
+		<div class="Requirements non-Selectable" id="Appendix_0" onclick="showContent(0)">
 			<span>Requirements</span>
 		</div>
-		<div class="Research non-Selectable" id="Appendix_1">
+		<div class="Research non-Selectable" id="Appendix_1" onclick="showContent(1)">
 			<span>Research</span>
 		</div>
-		<div class="HCI non-Selectable" id="Appendix_2">
-			<span>HCI</span>
-		</div>
-		<div class="Prototype non-Selectable" id="Appendix_3">
+		<a href="HCI.pptx">
+			<div class="HCI non-Selectable" id="Appendix_2">
+				<span>HCI</span>
+			</div>
+		</a>
+		<div class="Prototype non-Selectable" id="Appendix_3" onclick="showContent(3)">
 			<span>Prototype</span>
 		</div>
-		<div class="Achievement non-Selectable" id="Appendix_4">
+		<div class="Achievement non-Selectable" id="Appendix_4" onclick="showContent(4)">
 			<span>Achievement</span>
 		</div>
-		<div class="Plan non-Selectable" id="Appendix_5">
+		<div class="Plan non-Selectable" id="Appendix_5" onclick="showContent(5)">
 			<span>Plan</span>
 		</div>
+	</div>
+	<div id = "contentsBackground">
+		
 	</div>
 	<a href="https://www.facebook.com/yuxuan.liao.779">
 		<svg class="Icon_awesome_facebook_square" viewBox="0 2.25 38 38">

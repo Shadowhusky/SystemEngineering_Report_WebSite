@@ -21,7 +21,6 @@
 		width: 100%;
 		height: 100%;
 	}
-		
 	#Background_Watch{
 		visibility: hidden;
 		top: -20%;
@@ -30,6 +29,14 @@
 		width: 60%;
 		position: absolute;
 		z-index: -1;
+	}
+	#contentsBackground{
+		visibility: hidden;
+		background-color: rgba(0,0,0,0.55);
+		position: absolute;
+		width: 55%;
+		height: 100%;
+		left: 26%;
 	}
 	#active_2 {
 		position: absolute;
@@ -99,6 +106,7 @@
 		user-select: none; /* Non-prefixed version, currently*/
 	}
 	.Requirements {
+		cursor: pointer;
 		position: absolute;
 		left: 20%;
 		top: 11%;
@@ -112,6 +120,7 @@
 		color: rgba(255,255,255,1);
 	}
 	.Research {
+		cursor: pointer;
 		position: absolute;
 		left: 20%;
 		top: 26%;
@@ -125,6 +134,7 @@
 		color: rgba(255,255,255,1);
 	}
 	.HCI {
+		cursor: pointer;
 		position: absolute;
 		left: 20%;
 		top: 41%;
@@ -138,6 +148,7 @@
 		color: rgba(255,255,255,1);
 	}
 	.Prototype {
+		cursor: pointer;
 		position: absolute;
 		left: 20%;
 		top: 56%;
@@ -151,6 +162,7 @@
 		color: rgba(255,255,255,1);
 	}
 	.Achievement {
+		cursor: pointer;
 		position: absolute;
 		left: 20%;
 		top: 71%;
@@ -164,6 +176,7 @@
 		color: rgba(255,255,255,1);
 	}
 	.Plan {
+		cursor: pointer;
 		position: absolute;
 		left: 20%;
 		top: 86%;
