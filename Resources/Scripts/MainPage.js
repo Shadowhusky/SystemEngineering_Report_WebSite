@@ -17,15 +17,19 @@
 		
 		//Allow multiple atrributes
 		var arrayOfNames = animationName.split(" ");
+		if(!node.classList.contains('animated'))
+		{
+			node.classList.add('animated');
+		}
 		for(let i in arrayOfNames)
 		{
-			node.classList.add('animated', arrayOfNames[i]);
+			node.classList.add(arrayOfNames[i]);
 		}
 	 	
 		function handleAnimationEnd() {
 			for(let i in arrayOfNames)
 			{
-				node.classList.remove('animated', arrayOfNames[i]);
+				node.classList.remove(arrayOfNames[i]);
 			}
 			node.removeEventListener('animationend', handleAnimationEnd);
 
