@@ -1,6 +1,6 @@
 //Script for Mainpage(Home)
 	var elementsLoaded = 0;
-	var elementsNeedToBeLoaded = 5;
+	var elementsNeedToBeLoaded = 4;
 	var main_Anime_Finished = false;
 	var selectedContent = 3;
 	var contentsBackground_Anime_Finished;
@@ -105,8 +105,6 @@
 		}
 		changeVisiblility("#Background",1);
 		animateCSS("#Background","fadeIn_Cust",0,1);
-		changeVisiblility("#Background_Watch",1);
-		animateCSS("#Background_Watch","fadeIn faster",0,1);
 		for(let i=0; i<6; i++)
 		{	
 			changeVisiblility("#Appendix_"+i,1);
