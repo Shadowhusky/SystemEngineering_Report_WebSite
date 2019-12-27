@@ -76,7 +76,7 @@
 		if(elementsLoaded==elementsNeedToBeLoaded)
 		{	
 			//Hide loading window
-			animateCSS("#loading_Main","fadeOut slower",function(){
+			animateCSS("#loading_Main","fadeOut slow",function(){
 				$("#loading_Main")[0].style.display="none";
 			}
 			,1);
