@@ -309,15 +309,17 @@ body{
 		opacity: 0.95;
 		z-index: 2;
 		position: absolute;
+		top: 135vh;
+		left: 10vw;
 		width: 30vh;
-		top: 115vh;
 	}
 	#Prototype_Watch_2{
 		visibility: hidden;
 		z-index: 1;
 		position: absolute;
 		width: 27vh;
-		top: 122vh;
+		left: 42vw;
+		top: 135vh;
 	}
 	#loading_Main_Gif {
 		width: 80vw;
