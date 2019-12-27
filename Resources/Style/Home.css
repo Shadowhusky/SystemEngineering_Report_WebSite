@@ -1,35 +1,77 @@
 .GroupMember{
 	position: absolute;
 	z-index: 1;
+	height: 12vw;
 	width: 12vw;
 	border-radius: 0px;
 	top: 60vh;
 	opacity: 0.7;
 	box-shadow: 0 4px 8px 0 rgba(0, 150, 255, 0.2), 0 6px 20px 0 rgba(0, 150, 255, 0.15)
 }
+.GroupMember_Text{
+	font-size:1vw;
+	color: white;
+	text-align: center;
+	background-color: rgba(0,0,0,0.8);
+	transform: rotateY(180deg);
+	opacity:0.05;
+}
+#GroupMember_Richard_Text{
+	left: 44vw;
+}
 #GroupMember_Richard{
 	left: 44vw;
+	z-index:2;
+}
+#GroupMember_Richard:hover ~ #GroupMember_Richard_Text{
+	-webkit-animation: rotateY_Text 0.6s;
+	animation: rotateY_Text 0.6s;
+	transform: rotateY(0);
+	opacity:0.8;
 }
 #GroupMember_Richard:hover{
 	-webkit-animation: rotateY 0.6s;
 	animation: rotateY 0.6s;
 	transform: rotateY(180deg);
+	opacity:0.1;
+}
+#GroupMember_Yusen_Text{
+	left: 28vw;
 }
 #GroupMember_Yusen{
 	left: 28vw;
+	z-index:2;
+}
+#GroupMember_Yusen:hover ~ #GroupMember_Yusen_Text{
+	-webkit-animation: rotateY_Text 0.6s;
+	animation: rotateY_Text 0.6s;
+	transform: rotateY(0);
+	opacity:0.8;
 }
 #GroupMember_Yusen:hover{
 	-webkit-animation: rotateY 0.6s;
 	animation: rotateY 0.6s;
 	transform: rotateY(180deg);
+	opacity:0.1;
+}
+#GroupMember_Val_Text{
+	left: 60vw;
 }
 #GroupMember_Val{
 	left: 60vw;
+	z-index:2;
+}
+#GroupMember_Val:hover ~ #GroupMember_Val_Text{
+	-webkit-animation: rotateY_Text 0.6s;
+	animation: rotateY_Text 0.6s;
+	transform: rotateY(0);
+	opacity:0.8;
 }
 #GroupMember_Val:hover{
 	-webkit-animation: rotateY 0.6s;
 	animation: rotateY 0.6s;
 	transform: rotateY(180deg);
+	opacity:0.1;
 }
 .Background_Appendix {
 		opacity: 0.5;
@@ -133,13 +175,25 @@
 }
 
 @-webkit-keyframes rotateY {
-  from {transform: rotateY(0deg);}
-  to {transform: rotateY(180deg);}
+  from {transform: rotateY(0deg);opacity:0.8}
+  to {transform: rotateY(180deg);opacity:0.1}
   animation-timing-function:ease-in-out;
 }
 
 @keyframes rotateY {
-  from {transform: rotateY(0deg);}
-  to {transform: rotateY(180deg);}
+  from {transform: rotateY(0deg);opacity:0.8}
+  to {transform: rotateY(180deg);opacity:0.1}
+  animation-timing-function:ease-in-out;
+}
+
+@-webkit-keyframes rotateY_Text {
+  from {transform: rotateY(180deg);opacity:0.05;}
+  to {transform: rotateY(0);opacity:0.8;}
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes rotateY_Text {
+  from {transform: rotateY(180deg);opacity:0.05;}
+  to {transform: rotateY(0);opacity:0.8;}
   animation-timing-function:ease-in-out;
 }
