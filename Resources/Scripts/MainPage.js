@@ -103,8 +103,8 @@
 				});
 				main_Anime_Finished = true;
 		}
-		changeVisiblility("#Background",1);
-		animateCSS("#Background","fadeIn_Cust",0,1);
+		changeVisiblility("#Background_Home",1);
+		animateCSS("#Background_Home","fadeIn_Cust",0,1);
 		for(let i=0; i<6; i++)
 		{	
 			changeVisiblility("#Appendix_"+i,1);
