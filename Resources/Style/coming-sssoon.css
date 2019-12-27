@@ -546,6 +546,17 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 
 @media (min-width: 768px){
+	.main .logo.cursive{
+		font-family: 'Grand Hotel',cursive;
+		font-size: 82px;
+	}
+	.main .motto, .main .subscribe .info-text{
+		font-size: 28px;
+		color: #FFFFFF;
+		text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+		text-align: center;
+		margin-top: 50px;
+	}
     .navbar-form {
         margin-top: 21px;
         margin-bottom: 21px;
@@ -628,6 +639,17 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 
 @media (max-width: 768px){ 
+	.main .logo.cursive{
+		font-family: 'Grand Hotel',cursive;
+		font-size: 10vw;
+	}
+	.main .motto, .main .subscribe .info-text{
+		font-size: 4vw;
+		color: #FFFFFF;
+		text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+		text-align: center;
+		margin-top: 50px;
+	}
     .navbar-transparent{
         padding-top: 0px;
         background-color: rgba(0, 0, 0, 0.75);
@@ -735,25 +757,12 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     margin-top: 150px;
     z-index: 3;
 }
-.main .logo.cursive{
-    font-family: 'Grand Hotel',cursive;
-    font-size: 82px;
-    
-}
 .main .content{
     position: relative;
     z-index: 4;
 }
 .main .motto{
     min-height: 140px;
-}
-.main .motto, .main .subscribe .info-text{
-    font-size: 28px;
-    color: #FFFFFF;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
-    text-align: center;
-    margin-top: 50px;
-    
 }
 .main .subscribe .info-text{
     font-size: 18px;

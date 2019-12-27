@@ -8,14 +8,19 @@
 <title>Group16</title>
 
 
-<script type="text/javascript" src="Resources\Scripts\MainPage.js"></script>
 <script type="text/javascript" src="Resources\Scripts\Jquery.js"></script>
 <script type="text/javascript" src="Resources\Scripts\bootstrap.min.js"></script>
+
+<script type="text/javascript" src="Resources\Scripts\MainPage.js"></script>
+<script type="text/javascript" src="Resources\Scripts\Prototype.js"></script>
+
 <link rel="stylesheet" href="Resources\Style\animate.css">
 <link rel="stylesheet" type="text/css" href="Resources\Style\MainPage.css">
+<link rel="stylesheet" type="text/css" href="Resources\Style\Home.css">
+<link rel="stylesheet" type="text/css" href="Resources\Style\Prototype.css">
 
-<link href="Resources\Style\bootstrap.css" rel="stylesheet" />
-<link href="Resources\Style\coming-sssoon.css" rel="stylesheet" />    
+<link rel="stylesheet" type="text/css" href="Resources\Style\bootstrap.css">
+<link rel="stylesheet" type="text/css" href="Resources\Style\coming-sssoon.css">    
     
     <!--     Fonts     -->
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
@@ -24,7 +29,12 @@
 	
 </head>
 
-<body>
+<body onscroll = "onScroll_Main()">
+
+<div id="loading_Main">
+	<img id="loading_Main_Gif" src="Resources\Images\Loading_MainPage.gif">
+</div>
+
 <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">  
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -85,10 +95,13 @@
     <div class="footer">
 	<style>
 		.footer{
+			position: fixed;
 			right: 1vw;
 			width: 50%;
+			left: 49.5%;
 			color: #AAAAAA;
 			z-index: 4;
+			top: 91.5%;
 			text-align: right;
 			margin-top: 60px;
 		}
@@ -101,37 +114,47 @@
 
 <div id="HomePage">
 
-	<img id="Background" src= "Background_Main.png" onload="elementLoaded(1)">
+	<img class="GroupMember" id="GroupMember_Richard" src="Resources\Images\Richard.jpg">
+
+	<img class="GroupMember" id="GroupMember_Yusen" src="Resources\Images\Yuseng.jpg">
+	
+	<img class="GroupMember" id="GroupMember_Val" src="Resources\Images\Val.jpg">
+
+	<img id="Background" src= "Resources\Images\Background_Main.png" onload="elementLoaded(1)">
 
 	<img id="Background_Watch" src= "BackgroundWatch.png" onload="elementLoaded(1)">
 	
-	<div class="Background_Appendix" style="background-color:rgba(33,33,33,1)" ></div>
-	<div id="Appendix">
-		<div class="Requirements non-Selectable" id="Appendix_0" onclick="showContent(0)">
-			<span>Requirements</span>
-		</div>
-		<div class="Research non-Selectable" id="Appendix_1" onclick="showContent(1)">
-			<span>Research</span>
-		</div>
-		<a href="HCI.pptx">
-			<div class="HCI non-Selectable" id="Appendix_2">
-				<span>HCI</span>
+	<div id="nevigationBar">
+		<div class="Background_Appendix" style="background-color:rgba(33,33,33,1)" ></div>
+		<div id="Appendix">
+			<div class="Requirements non-Selectable" id="Appendix_0" onclick="showContent(0)">
+				<span>Requirements</span>
 			</div>
-		</a>
-		<div class="Prototype non-Selectable" id="Appendix_3" onclick="showContent(3)">
-			<span>Prototype</span>
-		</div>
-		<div class="Achievement non-Selectable" id="Appendix_4" onclick="showContent(4)">
-			<span>Achievement</span>
-		</div>
-		<div class="Plan non-Selectable" id="Appendix_5" onclick="showContent(5)">
-			<span>Plan</span>
+			<div class="Research non-Selectable" id="Appendix_1" onclick="showContent(1)">
+				<span>Research</span>
+			</div>
+			<a href="HCI.pptx">
+				<div class="HCI non-Selectable" id="Appendix_2">
+					<span>HCI</span>
+				</div>
+			</a>
+			<div class="Prototype non-Selectable" id="Appendix_3" onclick="showContent(3)">
+				<span>Prototype</span>
+			</div>
+			<div class="Achievement non-Selectable" id="Appendix_4" onclick="showContent(4)">
+				<span>Achievement</span>
+			</div>
+			<div class="Plan non-Selectable" id="Appendix_5" onclick="showContent(5)">
+				<span>Plan</span>
+			</div>
 		</div>
 	</div>
 
 </div>
 
 <div id="Prototype" class="non-Selectable">
+
+	<img id="Background_Prototype" src= "Resources\Images\Background_Prototype.jpg" onload="elementLoaded(1)">
 
 	<object type="image/svg+xml" data="Prototype_1.svg" class="logo" id="Prototype_Watch_1" onload="elementLoaded(1)"></object>
 		

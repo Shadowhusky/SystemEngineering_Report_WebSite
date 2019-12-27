@@ -1,9 +1,23 @@
 //Script for Mainpage(Home)
 	var elementsLoaded = 0;
-	var elementsNeedToBeLoaded = 4;
+	var elementsNeedToBeLoaded = 5;
 	var main_Anime_Finished = false;
 	var selectedContent = 3;
 	var contentsBackground_Anime_Finished;
+
+	window.onbeforeunload = function () {
+		window.scrollTo(0, 0);
+	}
+
+	function onScroll_Main(){
+		if( $(window).scrollTop()/$('body')[0].clientHeight >0.3  && $("#Prototype_Watch_1")[0].style.visibility != "visible" )
+		{
+			changeVisiblility("#Prototype_Watch_1",1);
+			animateCSS("#Prototype_Watch_1","fadeInUp_Cust",0,1);
+			changeVisiblility("#Prototype_Watch_2",1);
+			animateCSS("#Prototype_Watch_2","fadeInLeft_Cust",0,1);
+		}
+	}
 
 	function animateCSS(element, animationName, callback, spam)  //when spam == 1, the anime will be deleted after played.
 	{
@@ -61,12 +75,17 @@
 		elementsLoaded+=count;
 		if(elementsLoaded==elementsNeedToBeLoaded)
 		{	
+			//Hide loading window
+			animateCSS("#loading_Main","fadeOut slower",function(){
+				$("#loading_Main")[0].style.display="none";
+			}
+			,1);
+			playAnime_Prototype();
 			elementsLoaded = 0;
-			playAnime_MainPageLoaded();
 		}
 	}
 	
-	function playAnime_MainPageLoaded()
+	function playAnime_Prototype()
 	{
 		function finished(index){
 				setAnimeDelay("#Appendix_"+index,0);
@@ -85,13 +104,6 @@
 				});
 				main_Anime_Finished = true;
 		}
-		function playSecond()
-		{
-			changeVisiblility("#Prototype_Watch_1",1);
-			animateCSS("#Prototype_Watch_1","fadeInUp_Cust",0,1);
-			changeVisiblility("#Prototype_Watch_2",1);
-			animateCSS("#Prototype_Watch_2","fadeInLeft_Cust",0,1);
-		}
 		changeVisiblility("#Background",1);
 		animateCSS("#Background","fadeIn_Cust",0,1);
 		changeVisiblility("#Background_Watch",1);
@@ -101,7 +113,6 @@
 			changeVisiblility("#Appendix_"+i,1);
 			setAnimeDelay("#Appendix_"+i,i/8);
 			animateCSS("#Appendix_"+i,"fadeInUp",function(){
-				playSecond();
 				finished(i);
 			},1);
 		}

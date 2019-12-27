@@ -1,0 +1,145 @@
+.GroupMember{
+	position: absolute;
+	z-index: 1;
+	width: 12vw;
+	border-radius: 0px;
+	top: 60vh;
+	opacity: 0.7;
+	box-shadow: 0 4px 8px 0 rgba(0, 150, 255, 0.2), 0 6px 20px 0 rgba(0, 150, 255, 0.15)
+}
+#GroupMember_Richard{
+	left: 44vw;
+}
+#GroupMember_Richard:hover{
+	-webkit-animation: rotateY 0.6s;
+	animation: rotateY 0.6s;
+	transform: rotateY(180deg);
+}
+#GroupMember_Yusen{
+	left: 28vw;
+}
+#GroupMember_Yusen:hover{
+	-webkit-animation: rotateY 0.6s;
+	animation: rotateY 0.6s;
+	transform: rotateY(180deg);
+}
+#GroupMember_Val{
+	left: 60vw;
+}
+#GroupMember_Val:hover{
+	-webkit-animation: rotateY 0.6s;
+	animation: rotateY 0.6s;
+	transform: rotateY(180deg);
+}
+.Background_Appendix {
+		opacity: 0.5;
+		position: fixed;
+		overflow: visible;
+		width: 36vw;
+		height: 6vh;
+		left: 1vw;
+		border-radius: 10px;
+		top: 96vh;
+		z-index: 9;
+	}
+#Appendix {
+	visibility: hidden;
+	position: fixed;
+	width: 50vw;
+	height: 5vh;
+	left: 2vw;
+	top: 96.6vh;
+	overflow: hidden;
+	z-index: 10;
+}
+.Requirements {
+	cursor: pointer;
+	position: absolute;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Microsoft Yi Baiti;
+	font-style: normal;
+	font-weight: normal;
+	left: 0.5vw;
+	font-size: 1.2vw;
+	color: rgba(255,255,255,1);
+}
+.Research {
+	cursor: pointer;
+	position: absolute;
+	left: 8vw;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Microsoft Yi Baiti;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.2vw;
+	color: rgba(255,255,255,1);	
+}
+.HCI {
+	cursor: pointer;
+	position: absolute;
+	left: 14vw;
+	top: 0;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Microsoft Yi Baiti;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.2vw;
+	color: rgba(255,255,255,1);
+}
+.Prototype {
+	cursor: pointer;
+	position: absolute;
+	left: 18vw;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Microsoft Yi Baiti;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.2vw;
+	color: rgba(255,255,255,1);
+}
+.Achievement {
+	cursor: pointer;
+	position: absolute;
+	left: 24vw;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Microsoft Yi Baiti;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.2vw;
+	color: rgba(255,255,255,1);
+}
+.Plan {
+	cursor: pointer;
+	position: absolute;
+	left: 32vw;
+	overflow: visible;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Microsoft Yi Baiti;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.2vw;
+	color: rgba(255,255,255,1);
+}
+
+@-webkit-keyframes rotateY {
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(180deg);}
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes rotateY {
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(180deg);}
+  animation-timing-function:ease-in-out;
+}
