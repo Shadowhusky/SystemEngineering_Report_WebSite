@@ -104,6 +104,19 @@
 					animateCSS("#Appendix_"+index,"lostFocus faster",0,1);
 				});
 				main_Anime_Finished = true;
+				
+				changeVisiblility("#GroupMember_Richard",1);
+				animateCSS("#GroupMember_Richard","flipInY",function(){
+					changeVisiblility("#GroupMember_Richard_Text",1);
+				},1);
+				changeVisiblility("#GroupMember_Yusen",1);
+				animateCSS("#GroupMember_Yusen","flipInY",function(){
+					changeVisiblility("#GroupMember_Yusen_Text",1);
+				},1);
+				changeVisiblility("#GroupMember_Val",1);
+				animateCSS("#GroupMember_Val","flipInY",function(){
+					changeVisiblility("#GroupMember_Val_Text",1);
+				},1);
 		}
 		changeVisiblility("#Background_Home",1);
 		animateCSS("#Background_Home","fadeIn_Cust",0,1);
@@ -142,8 +155,6 @@
 		animateCSS("#Prototype_Watch_2","fadeOutUp fast",function(){
 			changeVisiblility("#Prototype_Watch_2",0);
 		},1);
-
-
 	}
 
 	function showRearch()
@@ -172,31 +183,5 @@
 
 	function showContent(content)
 	{
-		if(	  main_Anime_Finished == false 
-			|| selectedContent == content 
-			|| contentsBackground_Anime_Finished == false 
-			|| document.querySelector("#Prototype_Watch_1").classList.contains("fadeInUp_Cust") == true)
-		{ 
-			return;
-		}
-
-		//Zoom In the contents' background
-
-		if(selectedContent == 3)
-		{
-			changeVisiblility("#contentsBackground",1);
-			//Fade out two displays of watch.
-			animateCSS("#Prototype_Watch_1","fadeOutDown fast",function(){
-				changeVisiblility("#Prototype_Watch_1",0);
-			},1);
-
-			animateCSS("#Prototype_Watch_2","fadeOutUp fast",function(){
-				changeVisiblility("#Prototype_Watch_2",0);
-			},1);
-		}
-		contentsBackground_Anime_Finished = false;
-		animateCSS("#contentsBackground","zoomIn slow",function(){
-			contentsBackground_Anime_Finished = true;
-		},1);
-		selectedContent = content;
+		window.scrollTo(0, $("#Background_Home")[0].clientHeight*(content+1))
 	}
