@@ -5,6 +5,8 @@
 	var selectedContent = 3;
 	var contentsBackground_Anime_Finished;
 
+	window.scrollTo(0, 0);
+	
 	window.onbeforeunload = function () {
 		window.scrollTo(0, 0);
 	}
