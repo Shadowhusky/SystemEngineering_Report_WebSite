@@ -63,10 +63,10 @@
 
 			if(spam==1)
 			{
-				node.addEventListener('animationend', handleAnimationEnd(arrayOfNames,1));
+				node.addEventListener('animationend', function(){handleAnimationEnd(arrayOfNames,1);});
 			}
 			else{
-				node.addEventListener('animationend', handleAnimationEnd(arrayOfNames,0));
+				node.addEventListener('animationend', function(){handleAnimationEnd(arrayOfNames,1);});
 			}
 
 		}
