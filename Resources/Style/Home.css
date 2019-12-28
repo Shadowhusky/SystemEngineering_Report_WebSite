@@ -6,7 +6,8 @@
 	border-radius: 0px;
 	top: 60vh;
 	opacity: 0.7;
-	box-shadow: 0 4px 8px 0 rgba(0, 150, 255, 0.2), 0 6px 20px 0 rgba(0, 150, 255, 0.15)
+	box-shadow: 0 4px 8px 0 rgba(0, 150, 255, 0.2), 0 6px 20px 0 rgba(0, 150, 255, 0.15);
+	visibility:hidden;
 }
 .GroupMember_Text{
 	font-size:1vw;
@@ -18,12 +19,10 @@
 }
 #GroupMember_Richard_Text{
 	left: 44vw;
-	visibility:hidden;
 }
 #GroupMember_Richard{
 	left: 44vw;
 	z-index:2;
-	visibility:hidden;
 }
 #GroupMember_Richard:hover ~ #GroupMember_Richard_Text{
 	-webkit-animation: rotateY_Text 0.6s;
@@ -39,12 +38,10 @@
 }
 #GroupMember_Yusen_Text{
 	left: 28vw;
-	visibility:hidden;
 }
 #GroupMember_Yusen{
 	left: 28vw;
 	z-index:2;
-	visibility:hidden;
 }
 #GroupMember_Yusen:hover ~ #GroupMember_Yusen_Text{
 	-webkit-animation: rotateY_Text 0.6s;
@@ -60,12 +57,10 @@
 }
 #GroupMember_Val_Text{
 	left: 60vw;
-	visibility:hidden;
 }
 #GroupMember_Val{
 	left: 60vw;
 	z-index:2;
-	visibility:hidden;
 }
 #GroupMember_Val:hover ~ #GroupMember_Val_Text{
 	-webkit-animation: rotateY_Text 0.6s;

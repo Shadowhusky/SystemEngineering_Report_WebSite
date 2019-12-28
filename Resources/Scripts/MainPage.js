@@ -21,27 +21,17 @@
 		}
 	}
 
-	function animateCSS(element, animationName, callback, spam)  //when spam == 1, the anime will be deleted after played.
+	function animateCSS(elements, animationName, callback, spam)  //when spam == 1, the anime will be deleted after played.
 	{
-		const node = document.querySelector(element);
+
+		var node = document.querySelector(elements);
 		
 		if(node == null)
 		{
-			console.log("Element '"+ element +"' not found_Animate");
+			console.log("Element '"+ elements +"' not found_Animate");
 			return;
 		}
 		
-		//Allow multiple atrributes
-		var arrayOfNames = animationName.split(" ");
-		if(!node.classList.contains('animated'))
-		{
-			node.classList.add('animated');
-		}
-		for(let i in arrayOfNames)
-		{
-			node.classList.add(arrayOfNames[i]);
-		}
-	 	
 		function handleAnimationEnd() {
 			for(let i in arrayOfNames)
 			{
@@ -51,24 +41,45 @@
 
 			if (typeof callback === 'function') callback();
 		}
-
-		if(spam==1)
+		
+		for(let i = 0; i<$(elements).length; i++)
 		{
-			node.addEventListener('animationend', handleAnimationEnd);
+
+			node = $(elements)[i];
+
+			//Allow multiple atrributes
+			var arrayOfNames = animationName.split(" ");
+			if(!node.classList.contains('animated'))
+			{
+				node.classList.add('animated');
+			}
+			for(let i in arrayOfNames)
+			{
+				node.classList.add(arrayOfNames[i]);
+			}
+
+			if(spam==1)
+			{
+				node.addEventListener('animationend', handleAnimationEnd);
+			}
+
 		}
 	}
 	
-	function changeVisiblility(element, to)
+	function changeVisiblility(elements, to)
 	{
-		const node = document.querySelector(element);
-		switch(to)
+		for(let i = 0; i<$(elements).length; i++)
 		{
-			case 0:
-				node.style.visibility = "hidden";
-				break;
-			default:
-				node.style.visibility = "visible";
-				break;
+			var node =$(elements)[i];
+			switch(to)
+			{
+				case 0:
+					node.style.visibility = "hidden";
+					break;
+				default:
+					node.style.visibility = "visible";
+					break;
+			}
 		}
 	}
 
@@ -105,17 +116,10 @@
 				});
 				main_Anime_Finished = true;
 				
-				changeVisiblility("#GroupMember_Richard",1);
-				animateCSS("#GroupMember_Richard","flipInY",function(){
-					changeVisiblility("#GroupMember_Richard_Text",1);
-				},1);
-				changeVisiblility("#GroupMember_Yusen",1);
-				animateCSS("#GroupMember_Yusen","flipInY",function(){
-					changeVisiblility("#GroupMember_Yusen_Text",1);
-				},1);
-				changeVisiblility("#GroupMember_Val",1);
-				animateCSS("#GroupMember_Val","flipInY",function(){
-					changeVisiblility("#GroupMember_Val_Text",1);
+				changeVisiblility(".GroupMember",1);
+				changeVisiblility(".GroupMember_Text",0);
+				animateCSS(".GroupMember","flipInY",function(){
+					changeVisiblility(".GroupMember_Text",1);
 				},1);
 		}
 		changeVisiblility("#Background_Home",1);
