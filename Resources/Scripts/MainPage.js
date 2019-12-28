@@ -32,10 +32,13 @@
 			return;
 		}
 		
-		function handleAnimationEnd() {
-			for(let i in arrayOfNames)
+		function handleAnimationEnd(arrayOfNames,spam) {
+			if(spam==1)
 			{
-				node.classList.remove(arrayOfNames[i]);
+				for(let i in arrayOfNames)
+				{
+					node.classList.remove(arrayOfNames[i]);
+				}
 			}
 			node.removeEventListener('animationend', handleAnimationEnd);
 
@@ -60,7 +63,10 @@
 
 			if(spam==1)
 			{
-				node.addEventListener('animationend', handleAnimationEnd);
+				node.addEventListener('animationend', handleAnimationEnd(arrayOfNames,1));
+			}
+			else{
+				node.addEventListener('animationend', handleAnimationEnd(arrayOfNames,0));
 			}
 
 		}
@@ -120,7 +126,7 @@
 				changeVisiblility(".GroupMember_Text",0);
 				animateCSS(".GroupMember","flipInY",function(){
 					changeVisiblility(".GroupMember_Text",1);
-				},1);
+				},0);
 		}
 		changeVisiblility("#Background_Home",1);
 		animateCSS("#Background_Home","fadeIn_Cust",0,1);

@@ -6,7 +6,6 @@
 	border-radius: 0px;
 	top: 60vh;
 	opacity: 0.7;
-	box-shadow: 0 4px 8px 0 rgba(0, 150, 255, 0.2), 0 6px 20px 0 rgba(0, 150, 255, 0.15);
 	visibility:hidden;
 }
 .GroupMember_Text{
@@ -16,63 +15,67 @@
 	background-color: rgba(0,0,0,0.8);
 	transform: rotateY(180deg);
 	opacity:0.05;
+	box-shadow: 0 4px 8px 0 rgba(0, 150, 255, 0.2), 0 6px 20px 0 rgba(0, 150, 255, 0.15);
 }
 #GroupMember_Richard_Text{
 	left: 44vw;
 }
-#GroupMember_Richard{
+.GroupMember_Richard{
 	left: 44vw;
 	z-index:2;
 }
-#GroupMember_Richard:hover ~ #GroupMember_Richard_Text{
-	-webkit-animation: rotateY_Text 0.6s;
-	animation: rotateY_Text 0.6s;
-	transform: rotateY(0);
-	opacity:0.8;
-}
-#GroupMember_Richard:hover{
+#GroupMember_Richard_Trigger:hover ~ .GroupMember_Richard{
 	-webkit-animation: rotateY 0.6s;
 	animation: rotateY 0.6s;
 	transform: rotateY(180deg);
 	opacity:0.1;
+}
+#GroupMember_Richard_Trigger:hover ~ #GroupMember_Richard_Text{
+	-webkit-animation: rotateY_Text 0.6s;
+	animation: rotateY_Text 0.6s;
+	transform: rotateY(0);
+	opacity:0.8;
 }
 #GroupMember_Yusen_Text{
 	left: 28vw;
 }
-#GroupMember_Yusen{
+.GroupMember_Yusen{
 	left: 28vw;
 	z-index:2;
 }
-#GroupMember_Yusen:hover ~ #GroupMember_Yusen_Text{
-	-webkit-animation: rotateY_Text 0.6s;
-	animation: rotateY_Text 0.6s;
-	transform: rotateY(0);
-	opacity:0.8;
-}
-#GroupMember_Yusen:hover{
+#GroupMember_Yusen_Trigger:hover ~ .GroupMember_Yusen{
 	-webkit-animation: rotateY 0.6s;
 	animation: rotateY 0.6s;
 	transform: rotateY(180deg);
 	opacity:0.1;
+}
+#GroupMember_Yusen_Trigger:hover ~ #GroupMember_Yusen_Text{
+	-webkit-animation: rotateY_Text 0.6s;
+	animation: rotateY_Text 0.6s;
+	transform: rotateY(0);
+	opacity:0.8;
 }
 #GroupMember_Val_Text{
 	left: 60vw;
 }
-#GroupMember_Val{
+.GroupMember_Val{
 	left: 60vw;
 	z-index:2;
 }
-#GroupMember_Val:hover ~ #GroupMember_Val_Text{
+#GroupMember_Val_Trigger:hover ~ .GroupMember_Val{
+	-webkit-animation: rotateY 0.6s;
+	animation: rotateY 0.6s;
+	transform: rotateY(180deg);
+	opacity:0.1;
+}
+#GroupMember_Val_Trigger:hover ~ #GroupMember_Val_Text{
 	-webkit-animation: rotateY_Text 0.6s;
 	animation: rotateY_Text 0.6s;
 	transform: rotateY(0);
 	opacity:0.8;
 }
-#GroupMember_Val:hover{
-	-webkit-animation: rotateY 0.6s;
-	animation: rotateY 0.6s;
-	transform: rotateY(180deg);
-	opacity:0.1;
+.GroupMember_Trigger{
+	z-index:3;
 }
 .Background_Appendix {
 		opacity: 0.5;
