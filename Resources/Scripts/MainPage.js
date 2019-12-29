@@ -32,7 +32,7 @@
 			return;
 		}
 		
-		function handleAnimationEnd(arrayOfNames,spam) {
+		function handleAnimationEnd(node,arrayOfNames,spam) {
 			if(spam==1)
 			{
 				for(let i in arrayOfNames)
@@ -40,7 +40,6 @@
 					node.classList.remove(arrayOfNames[i]);
 				}
 			}
-			node.removeEventListener('animationend', handleAnimationEnd);
 
 			if (typeof callback === 'function') callback();
 		}
@@ -63,10 +62,10 @@
 
 			if(spam==1)
 			{
-				node.addEventListener('animationend', function(){handleAnimationEnd(arrayOfNames,1);});
+				node.addEventListener('animationend', function(){handleAnimationEnd(node,arrayOfNames,1);},{once:true});
 			}
 			else{
-				node.addEventListener('animationend', function(){handleAnimationEnd(arrayOfNames,0);});
+				node.addEventListener('animationend', function(){handleAnimationEnd(node,arrayOfNames,0);},{once:true});
 			}
 
 		}
