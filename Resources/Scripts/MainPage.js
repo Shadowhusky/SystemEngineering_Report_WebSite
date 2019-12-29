@@ -66,7 +66,7 @@
 				node.addEventListener('animationend', function(){handleAnimationEnd(arrayOfNames,1);});
 			}
 			else{
-				node.addEventListener('animationend', function(){handleAnimationEnd(arrayOfNames,1);});
+				node.addEventListener('animationend', function(){handleAnimationEnd(arrayOfNames,0);});
 			}
 
 		}
@@ -129,7 +129,9 @@
 				},0);
 		}
 		changeVisiblility("#Background_Home",1);
+		changeVisiblility(".Background_Appendix",1);
 		animateCSS("#Background_Home","fadeIn_Cust",0,1);
+		animateCSS(".Background_Appendix","flipInX slow",0,1);
 		for(let i=0; i<6; i++)
 		{	
 			changeVisiblility("#Appendix_"+i,1);

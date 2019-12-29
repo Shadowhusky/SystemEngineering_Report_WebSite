@@ -78,7 +78,8 @@
 	z-index:3;
 }
 .Background_Appendix {
-		opacity: 0.5;
+		visibility:hidden;
+		background-color:rgba(0,0,0,0.6);
 		position: fixed;
 		overflow: visible;
 		width: 36vw;
