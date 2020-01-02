@@ -9,7 +9,7 @@
 	
 	window.onbeforeunload = function () {
 		window.scrollTo(0, 0);
-	}
+	};
 
 	function onScroll_Main(){
 		if(elementsLoaded==elementsNeedToBeLoaded && $(window).scrollTop()/$('body')[0].clientHeight >0.3  && $("#Prototype_Watch_1")[0].style.visibility != "visible" )
@@ -124,6 +124,7 @@
 				changeVisiblility(".GroupMember",1);
 				changeVisiblility(".GroupMember_Text",0);
 				animateCSS(".GroupMember","flipInY",function(){
+					window.scrollTo(0, 0);
 					changeVisiblility(".GroupMember_Text",1);
 				},0);
 		}
