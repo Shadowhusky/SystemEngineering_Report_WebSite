@@ -96,8 +96,8 @@
 			//Hide loading window
 			animateCSS("#loading_Main","fadeOut slow",function(){
 				$("#loading_Main")[0].style.display="none";
-			}
-			,1);
+			},1);
+			window.scrollTo(0, 0);
 			playAnime_Prototype();
 		}
 	}
@@ -124,7 +124,6 @@
 				changeVisiblility(".GroupMember",1);
 				changeVisiblility(".GroupMember_Text",0);
 				animateCSS(".GroupMember","flipInY",function(){
-					window.scrollTo(0, 0);
 					changeVisiblility(".GroupMember_Text",1);
 				},0);
 		}
