@@ -1,0 +1,50 @@
+.DetailsWindow {
+	position: absolute;
+    width: 65%;
+    height: 83%;
+    left: 50%;
+    top: 50%;
+    background-color: black;
+    z-index: 4;
+    opacity: 0.9;
+	transform: translateX(-50%) translateY(-50%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	visibility: hidden;
+	backdrop-filter: blur(6px);
+	border-radius: 2%;
+}
+
+#DetailsWindow_Name {
+    position: absolute;
+    left: 50%;
+    top: 9vh;
+    /* height: 30%; */
+    font-size: 3vw;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+#DetailsWindow_Email {
+    position: absolute;
+    left: 57vw;
+    top: 80.5vh;
+    /* height: 30%; */
+    font-size: 1vw;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    color: white;
+    width:18vw;
+}
+
+#DetailsWindow_Contribution {
+    position: absolute;
+    left: 50%;
+    top: 29vh;
+    /* height: 30%; */
+    font-size: 1.8vw;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    color: white;
+    width:50vw;
+}

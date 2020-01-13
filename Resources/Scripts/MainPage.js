@@ -5,6 +5,10 @@
 	var selectedContent = 3;
 	var contentsBackground_Anime_Finished;
 
+	var groupMatesInfo = [["Richard Liao","a983974247@gmail.com","Web developer/App developer<br/><br/>Developed the report website and the front-end of the APP"],	//Name,Email,Contribution
+						  ["Yusen Li","zcablil@ucl.ac.uk","<br/>Researcher/Report Editor/UI Designer<br/><br/>Participated the XD design of the prototype, did research, Wrote and edited the report"],
+						  ["Valentin Gorbunov","valentin.gorbunov.17@ucl.ac.uk","<br/>Team Leader/Back-End developer<br/><br/>Developed the Back-End of the APP and made the slides and scripts for presentation"]];
+
 	window.scrollTo(0, 0);
 	
 	window.onbeforeunload = function () {
@@ -223,6 +227,19 @@
 		let trigger = $("#GroupMember_"+name+"_Trigger")[0];
 		$("#GroupMember_"+name+"_Trigger")[0].remove();
 		person.style.zIndex="4";
+
+		var selectedPersonIndex;
+		if(name=="Richard"){
+			selectedPersonIndex=0;
+		}else if(name=="Yusen"){
+			selectedPersonIndex=1;
+		}else if(name=="Val"){
+			selectedPersonIndex=2;
+		}
+
+		$("#DetailsWindow_Name")[0].innerHTML=groupMatesInfo[selectedPersonIndex][0];
+		$("#DetailsWindow_Email")[0].innerHTML=groupMatesInfo[selectedPersonIndex][1];
+		$("#DetailsWindow_Contribution")[0].innerHTML=groupMatesInfo[selectedPersonIndex][2];
 
 		$(".DetailsWindow")[0].style.visibility="visible";
 		animateCSS(".DetailsWindow","fadeIn_Cust_",function(){

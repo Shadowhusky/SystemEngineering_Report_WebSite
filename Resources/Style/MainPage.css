@@ -169,21 +169,6 @@ body{
 	transform: matrix(1,0,0,1,0,0);
 }
 
-.DetailsWindow {
-	position: absolute;
-    width: 65%;
-    height: 83%;
-    left: 50%;
-    top: 50%;
-    background-color: black;
-    z-index: 4;
-    opacity: 0.86;
-	transform: translateX(-50%) translateY(-50%);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-	visibility: hidden;
-	backdrop-filter: blur(6px);
-	border-radius: 2%;
-}
 
 /*Cutomized Animations*/
 @-webkit-keyframes fadeInUp_Cust {
@@ -411,7 +396,7 @@ body{
 	}
 
 	to {
-		opacity: 0.86;
+		opacity: 0.9;
 	}
 }
 
@@ -421,13 +406,13 @@ body{
 	}
 
 	to {
-		opacity: 0.86;
+		opacity: 0.9;
 	}
 }
 
 @keyframes fadeOut_Cust_ {
 	from {
-		opacity: 0.86;
+		opacity: 0.9;
 	}
 
 	to {
@@ -437,7 +422,7 @@ body{
 
 @-webkit-keyframes fadeOut_Cust_ {
 	from {
-		opacity: 0.86;
+		opacity: 0.9;
 	}
 
 	to {
