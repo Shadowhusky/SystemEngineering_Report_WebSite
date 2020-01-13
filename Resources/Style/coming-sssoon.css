@@ -769,21 +769,6 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     margin-bottom: 30px;
 }
 
-.footer{
-    position: relative;
-    bottom: 20px;
-    right: 0px;
-    width: 100%;
-    color: #AAAAAA;
-    z-index: 4;
-    text-align: right;
-    margin-top: 50px;
-
-}
-.footer a{
-    color: #FFFFFF;
-}
-
 #footerLabel{
 	margin-right: 1%;
 }
