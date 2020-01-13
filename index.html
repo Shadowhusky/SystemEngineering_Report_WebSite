@@ -9,7 +9,10 @@
 
 
 <script type="text/javascript" src="Resources\Scripts\Jquery.js"></script>
-<script type="text/javascript" src="Resources\Scripts\bootstrap.min.js"></script>
+ 
+<link rel="stylesheet" type="text/css" href="Resources\Style\bootstrap.css">
+<link rel="stylesheet" type="text/css" href="Resources\Style\coming-sssoon.css">    
+
 
 <script type="text/javascript" src="Resources\Scripts\MainPage.js"></script>
 <script type="text/javascript" src="Resources\Scripts\Prototype.js"></script>
@@ -19,9 +22,7 @@
 <link rel="stylesheet" type="text/css" href="Resources\Style\Home.css">
 <link rel="stylesheet" type="text/css" href="Resources\Style\Prototype.css">
 
-<link rel="stylesheet" type="text/css" href="Resources\Style\bootstrap.css">
-<link rel="stylesheet" type="text/css" href="Resources\Style\coming-sssoon.css">    
-    
+
     <!--     Fonts     -->
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
@@ -114,61 +115,68 @@
 
 <div id="HomePage">
 
-	<div class="GroupMemberDetail">
-
+	<div class="DetailsWindow">
+		<p id="DetailsWindow_Name"></p>
+		<p id="DetailsWindow_Email"></p>
+		<p id="DetailsWindow_Contribution"></p>
 	</div>
-	<div class="GroupMember GroupMember_Richard GroupMember_Trigger" id="GroupMember_Richard_Trigger"></div> <!--Trigger of hover-->
-	<img class="GroupMember GroupMember_Richard" src="Resources\Images\Richard.jpg">
+	<div class="GroupMember GroupMember_Richard GroupMember_Trigger" id="GroupMember_Richard_Trigger" onclick="showGroupMateDetails('Richard')"></div> <!--Trigger of hover-->
+	<img class="GroupMember GroupMember_Richard" id="GroupMember_Richard_Image" src="Resources\Images\Richard.jpg">
 	<div class="GroupMember GroupMember_Text" id="GroupMember_Richard_Text">
 		<text style="font-size:1.5vw; top : 5vh;"><br>Richard</text>
 		<text style="font-size:1vw"><br><br>App developer<br><br> Web Developer </text>
 	</div>
 	
-	<div class="GroupMember GroupMember_Yusen GroupMember_Trigger" id="GroupMember_Yusen_Trigger"></div>
-	<img class="GroupMember GroupMember_Yusen" src="Resources\Images\Yuseng.jpg">
+	<div class="GroupMember GroupMember_Yusen GroupMember_Trigger" id="GroupMember_Yusen_Trigger" onclick="showGroupMateDetails('Yusen')"></div>
+	<img class="GroupMember GroupMember_Yusen" id="GroupMember_Yusen_Image" src="Resources\Images\Yuseng.jpg">
 	<div class="GroupMember GroupMember_Text" id="GroupMember_Yusen_Text">
 		<text style="font-size:1.5vw; top : 5vh;"><br>Yusen</text>
 		<text style="font-size:1vw"><br><br>Developer<br><br> App developer </text>
 	</div>
 	
-	<div class="GroupMember GroupMember_Val GroupMember_Trigger" id="GroupMember_Val_Trigger"></div>
-	<img class="GroupMember GroupMember_Val" src="Resources\Images\Val.jpg">
+	<div class="GroupMember GroupMember_Val GroupMember_Trigger" id="GroupMember_Val_Trigger" onclick="showGroupMateDetails('Val')"></div>
+	<img class="GroupMember GroupMember_Val" id="GroupMember_Val_Image" src="Resources\Images\Val.jpg">
 	<div class="GroupMember GroupMember_Text" id="GroupMember_Val_Text">
 		<text style="font-size:1.5vw; top : 5vh;"><br>Val</text>
 		<text style="font-size:1vw"><br><br>Team Leader<br><br> Back-End developer </text>
 	</div>
 	
-	<img id="Background_Home" src= "Resources\Images\Background_Main.png" onload="elementLoaded(1)">
+	<img class="Background" id="Background_Home" src= "Resources\Images\Background_Main.png" onload="elementLoaded(1)">
 	
 	<div id="nevigationBar">
 		<div class="Background_Appendix"></div>
 		<div id="Appendix">
-			<div class="Requirements non-Selectable" id="Appendix_0" onclick="showContent(0)">
+			<div class="Requirements" id="Appendix_0" onclick="showContent(0)">
 				<span>Requirements</span>
 			</div>
-			<div class="Research non-Selectable" id="Appendix_1" onclick="showContent(1)">
+			<div class="Research" id="Appendix_1" onclick="showContent(1)">
 				<span>Research</span>
 			</div>
 			<a href="HCI.pptx">
-				<div class="HCI non-Selectable" id="Appendix_2">
+				<div class="HCI" id="Appendix_2">
 					<span>HCI</span>
 				</div>
 			</a>
-			<div class="Prototype non-Selectable" id="Appendix_3" onclick="showContent(3)">
+			<div class="Prototype" id="Appendix_3" onclick="showContent(3)">
 				<span>Prototype</span>
 			</div>
-			<div class="Achievement non-Selectable" id="Appendix_4" onclick="showContent(4)">
+			<div class="Achievement" id="Appendix_4" onclick="showContent(4)">
 				<span>Achievement</span>
 			</div>
-			<div class="Plan non-Selectable" id="Appendix_5" onclick="showContent(5)">
+			<div class="Plan" id="Appendix_5" onclick="showContent(5)">
 				<span>Plan</span>
 			</div>
 		</div>
 	</div>
 
+	<div> <!--Introduction Video-->
+		<img class="Background" id="Background_Home_Video" src= "Resources\Images\Background_Home.jpg" onload="elementLoaded(1)">
+		<iframe id="Home_Video" src="https://www.youtube.com/embed/hqK0pqV-c9c" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>
+	</div>
+
 </div>
 
-<div id="Prototype" class="non-Selectable">
+<div id="Prototype">
 
 	<img id="Background_Prototype" src= "Resources\Images\Background_Prototype.jpg" onload="elementLoaded(1)">
 

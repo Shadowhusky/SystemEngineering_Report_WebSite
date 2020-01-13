@@ -1,6 +1,6 @@
 //Script for Mainpage(Home)
 	var elementsLoaded = 0;
-	var elementsNeedToBeLoaded = 4;
+	var elementsNeedToBeLoaded = 5;
 	var main_Anime_Finished = false;
 	var selectedContent = 3;
 	var contentsBackground_Anime_Finished;
@@ -12,7 +12,7 @@
 	};
 
 	function onScroll_Main(){
-		if(elementsLoaded==elementsNeedToBeLoaded && $(window).scrollTop()/$('body')[0].clientHeight >0.3  && $("#Prototype_Watch_1")[0].style.visibility != "visible" )
+		if(elementsLoaded==elementsNeedToBeLoaded && $(window).scrollTop()/$('body')[0].clientHeight >0.8  && $("#Prototype_Watch_1")[0].style.visibility != "visible" )
 		{
 			changeVisiblility("#Prototype_Watch_1",1);
 			animateCSS("#Prototype_Watch_1","fadeInUp_Cust",0,1);
@@ -194,5 +194,47 @@
 
 	function showContent(content)
 	{
-		window.scrollTo(0, $("#Background_Home")[0].clientHeight*(content+1))
+		window.scrollTo(0, $("#Background_Home")[0].clientHeight*(content+1));
+	}
+
+	var closeDetailsWindow = function(personID){
+		$(".DetailsWindow")[0].style.visibility="hidden";
+		animateCSS(personID,"floatAndShape_Reverse fast",function(){
+			$(personID)[0].style.zIndex="2";
+			$(personID)[0].style.borderRadius="0";
+		},1);
+		$('.DetailsWindow').replaceWith($('.DetailsWindow').clone());	//Remove All listener;
+	};
+
+	function showGroupMateDetails(name) {
+		var node = $(".GroupMember");
+		for(var i in node){
+			try{
+				node[i].classList.remove('animated', "rotateY");
+			}catch(e){}
+		}
+
+		var personID = ("#GroupMember_"+name+"_Image");
+		let person = $(personID)[0];
+
+		$(".GroupMember_"+name)[1].classList.remove("animated");
+		$(".GroupMember_"+name)[1].classList.remove("flipInY");
+
+		let trigger = $("#GroupMember_"+name+"_Trigger")[0];
+		$("#GroupMember_"+name+"_Trigger")[0].remove();
+		person.style.zIndex="4";
+
+		$(".DetailsWindow")[0].style.visibility="visible";
+		animateCSS(".DetailsWindow","fadeIn_Cust_",function(){
+			$(".DetailsWindow")[0].addEventListener("click", function(){closeDetailsWindow(personID);});
+		},1);
+
+		animateCSS("#GroupMember_"+name+"_Image","floatAndShape",function(){
+			person.style.zIndex="4";
+			person.style.borderRadius="50%";
+			$("#HomePage")[0].insertBefore(trigger,$("#HomePage")[0].children[0]);
+		},1);
+
+		
+		
 	}

@@ -1,6 +1,23 @@
 #Background_Prototype{
-    top: 100vh;
+    top: 200vh;
     width: 100vw;
     height: 100vh;
     position: absolute;
+}
+#Prototype_Watch_1{
+	visibility: hidden;
+	opacity: 0.95;
+	z-index: 2;
+	position: absolute;
+	width: 30vw;
+	left: 30%;
+	top: 215vh;
+}
+#Prototype_Watch_2{
+	visibility: hidden;
+	z-index: 1;
+	position: absolute;
+	width: 27vw;
+	left: 51vw;
+	top: 222vh;
 }

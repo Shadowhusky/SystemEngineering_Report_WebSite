@@ -3,12 +3,23 @@
 	padding: 0;
 	box-sizing: border-box;
 	border: none;
+
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently*/
+	
+	user-drag: none;
+	-webkit-user-drag: none;
 }
 
 body{
 	height:200vh;
 	overflow-y:scroll;
 	overflow-x: hidden;
+	background-color: black;
 }
 
 ::-webkit-scrollbar-track
@@ -59,8 +70,7 @@ body{
 	--web-view-id: MainPage;
 	--web-enable-deep-linking: true;
 }
-#Background_Home{
-	visibility: hidden;
+.Background{
 	opacity: 0.95;
 	position: absolute;
 	width: 100vw;
@@ -90,39 +100,6 @@ body{
 	left: 1129.774px;
 	top: -283.111px;
 	overflow: visible;
-}
-.Background {
-	position: absolute;
-	overflow: visible;
-	width: 1920px;
-	height: 1280px;
-	left: 0px;
-	top: 0px;
-}
-#Prototype_Watch_1{
-	visibility: hidden;
-	opacity: 0.95;
-	z-index: 2;
-	position: absolute;
-	width: 30vw;
-	left: 30%;
-	top: 115vh;
-}
-#Prototype_Watch_2{
-	visibility: hidden;
-	z-index: 1;
-	position: absolute;
-	width: 27vw;
-	left: 51vw;
-	top: 122vh;
-}
-.non-Selectable {
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently*/
 }
 #active_2_3 {
 	position: absolute;
@@ -176,6 +153,22 @@ body{
 	left: 90%;
 	top: 95.1%;
 	transform: matrix(1,0,0,1,0,0);
+}
+
+.DetailsWindow {
+	position: absolute;
+    width: 65%;
+    height: 83%;
+    left: 50%;
+    top: 50%;
+    background-color: black;
+    z-index: 4;
+    opacity: 0.86;
+	transform: translateX(-50%) translateY(-50%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	visibility: hidden;
+	backdrop-filter: blur(6px);
+	border-radius: 2%;
 }
 
 /*Cutomized Animations*/
@@ -332,13 +325,49 @@ body{
 	}
 }
 
-@-webkit-keyframes fadeIn_Cust {
+@keyframes floatAndShape {
 	from {
+		border-radius: 0;
 		opacity: 0;
 	}
 
 	to {
-		opacity: 0.95;
+		border-radius: 50%;
+		opacity: 0.7;
+	}
+}
+
+
+@-webkit-keyframes floatAndShape {
+	from {
+		border-radius: 0;
+		opacity: 0;
+	}
+
+	to {
+		border-radius: 50%;
+		opacity: 0.7;
+	}
+}
+
+@keyframes floatAndShape_Reverse {
+	from {
+		border-radius: 50%;
+	}
+
+	to {
+		border-radius: 0;
+	}
+}
+
+
+@-webkit-keyframes floatAndShape_Reverse {
+	from {
+		border-radius: 50%;
+	}
+
+	to {
+		border-radius: 0;
 	}
 }
 
@@ -352,7 +381,77 @@ body{
 	}
 }
 
+@-webkit-keyframes fadeIn_Cust {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 0.95;
+	}
+}
+
+@keyframes fadeIn_Cust_ {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 0.86;
+	}
+}
+
+@-webkit-keyframes fadeIn_Cust_ {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 0.86;
+	}
+}
+
+@keyframes fadeOut_Cust_ {
+	from {
+		opacity: 0.86;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes fadeOut_Cust_ {
+	from {
+		opacity: 0.86;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+.fadeOut_Cust_ {
+	-webkit-animation-name: fadeOut_Cust_;
+	animation-name: fadeOut_Cust_;
+}
+
 .fadeIn_Cust {
 	-webkit-animation-name: fadeIn_Cust;
 	animation-name: fadeIn_Cust;
+}
+
+.fadeIn_Cust_ {
+	-webkit-animation-name: fadeIn_Cust_;
+	animation-name: fadeIn_Cust_;
+}
+
+.floatAndShape {
+	-webkit-animation-name: floatAndShape;
+	animation-name: floatAndShape;
+}
+
+.floatAndShape_Reverse {
+	-webkit-animation-name: floatAndShape_Reverse;
+	animation-name: floatAndShape_Reverse;
 }
