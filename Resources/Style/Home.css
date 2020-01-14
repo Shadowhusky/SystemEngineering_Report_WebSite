@@ -2,14 +2,14 @@
 	visibility: hidden;
 }
 #Background_Home_Video {
-	top:100vh;
+	top:200vh;
 	opacity: 0.8;
 }
 #Home_Video {
     position: absolute;
     width: 42.33vw;
     height: 45vh;
-    top: 125vh;
+    top: 225vh;
 	left: 29.5vw;
 }
 .GroupMember{

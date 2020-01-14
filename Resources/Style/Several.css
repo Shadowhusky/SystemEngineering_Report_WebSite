@@ -10,3 +10,7 @@
     position: absolute;
     transform: translateX(-50%);
 }
+
+.text-container{ 
+    color: white;
+}

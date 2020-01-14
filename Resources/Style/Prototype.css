@@ -1,8 +1,9 @@
 #Background_Prototype{
-    top: 200vh;
+    top: 100vh;
     width: 100vw;
     height: 100vh;
     position: absolute;
+    opacity: 0.5;
 }
 #Prototype_Watch_1{
 	visibility: hidden;
@@ -11,7 +12,7 @@
 	position: absolute;
 	width: 30vw;
 	left: 30%;
-	top: 215vh;
+	top: 115vh;
 }
 #Prototype_Watch_2{
 	visibility: hidden;
@@ -19,21 +20,5 @@
 	position: absolute;
 	width: 27vw;
 	left: 51vw;
-	top: 222vh;
-}
-
-#Project_Description {
-    font-size: 1vw;
-    top: 203vh;
-    left: 2vw;
-    position: absolute;
-    z-index: 1;
-    color: white;
-    background-color: black;
-    border: none;
-    width: 30%;
-    height: 56%;
-    white-space: pre;
-    opacity: 0.5;
-    border-radius: 5%;
+	top: 122vh;
 }

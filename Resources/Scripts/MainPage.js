@@ -16,7 +16,7 @@
 	};
 
 	function onScroll_Main(){
-		if(elementsLoaded==elementsNeedToBeLoaded && $(window).scrollTop()/$('body')[0].clientHeight >0.8  && $("#Prototype_Watch_1")[0].style.visibility != "visible" )
+		if(elementsLoaded==elementsNeedToBeLoaded && $(window).scrollTop()/$('body')[0].clientHeight >0.3  && $("#Prototype_Watch_1")[0].style.visibility != "visible" )
 		{
 			changeVisiblility("#Prototype_Watch_1",1);
 			animateCSS("#Prototype_Watch_1","fadeInUp_Cust",0,1);
