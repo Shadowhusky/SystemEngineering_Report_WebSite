@@ -18,7 +18,6 @@
     position: absolute;
     left: 50%;
     top: 9vh;
-    /* height: 30%; */
     font-size: 3vw;
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
@@ -27,21 +26,19 @@
 
 #DetailsWindow_Email {
     position: absolute;
-    left: 57vw;
-    top: 80.5vh;
-    /* height: 30%; */
+    left: 55vw;
+    top: 80.3vh;
     font-size: 1vw;
     transform: translateX(-50%) translateY(-50%);
-    text-align: center;
+    text-align: right;
     color: white;
-    width:18vw;
+    width: 18vw;
 }
 
 #DetailsWindow_Contribution {
     position: absolute;
     left: 50%;
     top: 29vh;
-    /* height: 30%; */
     font-size: 1.8vw;
     transform: translateX(-50%) translateY(-50%);
     text-align: center;

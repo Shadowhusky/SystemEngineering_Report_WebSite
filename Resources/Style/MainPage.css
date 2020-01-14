@@ -24,16 +24,19 @@ body{
 
 .footer{
 	position: fixed;
-	right: 1vw;
-	width: 13%;
-	left: 86.3%;
-	color: white;
-	z-index: 4;
-	/* margin-top: 60px; */
-	height: 5vh;
-	text-align: center;
-	top: 96%;
-	font-size: 0.8vw;
+    width: 20vw;
+    left: 89vw;
+    color: white;
+    z-index: 4;
+    height: 3.5vh;
+    text-align: right;
+    top: 99vh;
+    font-size: 0.6vw;
+    opacity: 0.6;
+    border-radius: 10%;
+    background-color: transparent;
+    padding-top: 0;
+    transform: translateY(-50%) translateX(-50%);
 }
 
 ::-webkit-scrollbar-track

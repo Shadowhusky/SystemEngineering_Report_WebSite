@@ -90,6 +90,7 @@
 }
 .GroupMember_Trigger{
 	z-index:3;
+	cursor: pointer;
 }
 .Background_Appendix {
 		visibility:hidden;
@@ -105,13 +106,14 @@
 	}
 #Appendix {
 	visibility: hidden;
-	position: fixed;
-	width: 50vw;
-	height: 5vh;
-	left: 2vw;
-	top: 96.2vh;
-	overflow: hidden;
-	z-index: 10;
+    position: fixed;
+    width: 50vw;
+    height: 5vh;
+    left: 2vw;
+    top: 98.5%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    z-index: 10;
 }
 .Requirements {
 	cursor: pointer;
@@ -191,6 +193,21 @@
 	font-weight: normal;
 	font-size: 1.2vw;
 	color: rgba(255,255,255,1);
+}
+
+#introduction {
+    position: absolute;
+    top: 300vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+#introductionContainer {
+    left: 50%;
+    position: absolute;
+	top: 33%;
+	z-index: 1;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 @-webkit-keyframes rotateY {
