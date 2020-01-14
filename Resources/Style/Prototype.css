@@ -21,3 +21,18 @@
 	left: 51vw;
 	top: 222vh;
 }
+
+#Project_Description {
+    font-size: 1vw;
+    top: 203vh;
+    left: 2vw;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background-color: black;
+    border: none;
+    width: 30%;
+    height: 56%;
+    white-space: pre;
+    opacity: 0.5;
+}
