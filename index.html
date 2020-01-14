@@ -143,7 +143,7 @@
 </div>
 
 <div id="Prototype">
-  
+
 	<img id="Background_Prototype" src= "Resources\Images\Background_Prototype.jpg" onload="elementLoaded(1)">
 
 	<object type="image/svg+xml" data="Prototype_1.svg" class="logo" id="Prototype_Watch_1" onload="elementLoaded(1)"></object>
@@ -238,34 +238,41 @@
                   <!-- Filter -->
                   <div class="button-group filters-button-group">
                       <a class="button is-checked" data-filter="*"><span>SHOW ALL</span></a>
-                      <a class="button" data-filter=".design"><span>Research</span></a>
-                      <a class="button" data-filter=".development"><span>HCI</span></a>
-                      <a class="button" data-filter=".marketing"><span>Prototype</span></a>
-                      <a class="button" data-filter=".seo"><span>Achievement</span></a>
+                      <a class="button" data-filter=".Requirements"><span>Requirements</span></a>
+                      <a class="button" data-filter=".Research"><span>Research</span></a>
+                      <a class="button" data-filter=".HCI"><span>HCI</span></a>
+                      <a class="button" data-filter=".Prototype"><span>Prototype</span></a>
+                      <a class="button" data-filter=".Achievement"><span>Achievement</span></a>
                   </div> <!-- end of button group -->
                   <div class="grid">
-                      <div class="element-item development">
-                          <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Online Banking</span></div><img src="images/project-1.jpg" alt="alternative"></a>
+                      <div class="element-item Requirements">
+                          <a class="popup-with-move-anim" href="#Requirements_MosCoW"><div class="element-item-overlay"><span>MosCoW Analysis</span></div><img src="images/MoSCoW.png" alt="alternative"></a>
                       </div>
-                      <div class="element-item development">
+                      <div class="element-item Requirements">
+                          <a class="popup-with-move-anim" href="#Requirements_Persona"><div class="element-item-overlay"><span>Persona</span></div><img src="images/Persona.png" alt="alternative"></a>
+                      </div>
+                      <div class="element-item Research">
+                          <a class="popup-with-move-anim" href="#Requirements_UseCaseDiagram"><div class="element-item-overlay"><span>Online Banking</span></div><img src="images/project-1.jpg" alt="alternative"></a>
+                      </div>
+                      <div class="element-item Research">
                           <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Classic Industry</span></div><img src="images/project-2.jpg" alt="alternative"></a>
                       </div>
-                      <div class="element-item design">
+                      <div class="element-item HCI">
                           <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>BoomBap Audio</span></div><img src="images/project-3.jpg" alt="alternative"></a>
                       </div>
-                      <div class="element-item design">
+                      <div class="element-item HCI">
                           <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Van Moose</span></div><img src="images/project-4.jpg" alt="alternative"></a>
                       </div>
-                      <div class="element-item seo">
+                      <div class="element-item Prototype">
                           <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Joy Moments</span></div><img src="images/project-5.jpg" alt="alternative"></a>
                       </div>
-                      <div class="element-item seo">
+                      <div class="element-item Prototype">
                           <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span>Spark Events</span></div><img src="images/project-6.jpg" alt="alternative"></a>
                       </div>
-                      <div class="element-item marketing">
+                      <div class="element-item Achievement">
                           <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Casual Wear</span></div><img src="images/project-7.jpg" alt="alternative"></a>
                       </div>
-                      <div class="element-item marketing">
+                      <div class="element-item Achievement">
                           <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span>Zazoo Apps</span></div><img src="images/project-8.jpg" alt="alternative"></a>
                       </div>
                   </div> <!-- end of grid -->
@@ -277,9 +284,51 @@
   </div> <!-- end of filter -->
   <!-- end of projects -->
 
+
   <!-- Project Lightboxes -->
     <!-- Lightbox -->
-    <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+    <div id="Requirements_MosCoW" class="lightbox-basic zoom-anim-dialog mfp-hide">
+      <div class="row">
+          <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+          <div class="col-lg-8">
+              <img class="img-fluid" src="images/MoSCoW.png" alt="alternative">
+          </div> <!-- end of col -->
+          <div class="col-lg-4">
+              <h3>MosCoW Analysis</h3>
+              <hr class="line-heading">
+              <p>All requirements are important, but they are prioritized to deliver the greatest and most immediate business benefits early. We will initially try to deliver all the Must have, Should have and Could have requirements but the Should and Could requirements will be the first to be removed if the delivery timescale looks threatened.</p>
+              <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+          </div> <!-- end of col -->
+      </div> <!-- end of row -->
+  </div> <!-- end of lightbox-basic -->
+  <!-- end of lightbox -->
+
+  <!-- Project Lightboxes -->
+    <!-- Lightbox -->
+    <div id="Requirements_Persona" class="lightbox-basic zoom-anim-dialog mfp-hide">
+      <div class="row">
+          <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+          <div class="col-lg-8">
+              <img class="img-fluid" src="images/Persona.png" alt="alternative">
+          </div> <!-- end of col -->
+          <div class="col-lg-4">
+              <h3>Persona</h3>
+              <hr class="line-heading">
+              <h6>Typical users</h6>
+              <p>•Project background: Workspace </p>
+              <p>•Requirement gathering — How did you collect the requirements? Did you design any survey?</p>
+              <div class="testimonial-container">
+                  <p class="testimonial-text">The outcome combines our ideals with the advices from our tutor and take a survey with our classmates.</p>
+              </div>
+              <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+          </div> <!-- end of col -->
+      </div> <!-- end of row -->
+  </div> <!-- end of lightbox-basic -->
+  <!-- end of lightbox -->
+
+   <!-- Project Lightboxes -->
+    <!-- Lightbox -->
+    <div id="Requirements_UseCaseDiagram" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
           <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
           <div class="col-lg-8">
@@ -301,8 +350,9 @@
   </div> <!-- end of lightbox-basic -->
   <!-- end of lightbox -->
 
+
   <!-- Lightbox -->
-  <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+  <div id="HCI" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
           <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
           <div class="col-lg-8">
@@ -325,7 +375,7 @@
   <!-- end of lightbox -->
 
   <!-- Lightbox -->
-  <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+  <div id="Prototype" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
           <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
           <div class="col-lg-8">
@@ -348,7 +398,7 @@
   <!-- end of lightbox -->
 
   <!-- Lightbox -->
-  <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
+  <div id="Achievement" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
           <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
           <div class="col-lg-8">
