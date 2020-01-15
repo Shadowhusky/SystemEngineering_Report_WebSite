@@ -73,7 +73,7 @@ body{
 	text-decoration: underline;
 }
 .CentralizeAndShrink {
-	width: 90%;
+    width: 85%;
     position: absolute;
     left: 50%;
     top: 50%;

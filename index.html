@@ -92,21 +92,21 @@
 	<img class="GroupMember GroupMember_Richard" id="GroupMember_Richard_Image" src="Resources\Images\Richard.jpg">
 	<div class="GroupMember GroupMember_Text" id="GroupMember_Richard_Text">
 		<text style="font-size:1.5vw; top : 5vh;"><br>Richard</text>
-		<text style="font-size:1vw"><br><br>App developer<br><br> Web Developer </text>
+		<text style="font-size:1vw"><br><br>Front End Developer<br><br> UI Designer </text>
 	</div>
 	
 	<div class="GroupMember GroupMember_Yusen GroupMember_Trigger" id="GroupMember_Yusen_Trigger" onclick="showGroupMateDetails('Yusen')"></div>
 	<img class="GroupMember GroupMember_Yusen" id="GroupMember_Yusen_Image" src="Resources\Images\Yuseng.jpg">
 	<div class="GroupMember GroupMember_Text" id="GroupMember_Yusen_Text">
 		<text style="font-size:1.5vw; top : 5vh;"><br>Yusen</text>
-		<text style="font-size:1vw"><br><br>Developer<br><br> App developer </text>
+		<text style="font-size:1vw"><br><br>UI Designer<br><br> Report Editor</text>
 	</div>
 	
 	<div class="GroupMember GroupMember_Val GroupMember_Trigger" id="GroupMember_Val_Trigger" onclick="showGroupMateDetails('Val')"></div>
 	<img class="GroupMember GroupMember_Val" id="GroupMember_Val_Image" src="Resources\Images\Val.jpg">
 	<div class="GroupMember GroupMember_Text" id="GroupMember_Val_Text">
 		<text style="font-size:1.5vw; top : 5vh;"><br>Val</text>
-		<text style="font-size:1vw"><br><br>Team Leader<br><br> Back-End developer </text>
+		<text style="font-size:1vw"><br><br>Back-End developer <br><br>Team Leader </text>
 	</div>
 	
 	<img class="Background" id="Background_Home" src= "Resources\Images\Background_Main.png" onload="elementLoaded(1)">
@@ -269,8 +269,14 @@
                         <a class="popup-with-move-anim" href="#Research_HERE"><div class="element-item-overlay"><span>HERE</span></div><img src="images/HERE.png" alt="alternative"></a>
                       </div>
                       <div class="element-item HCI">
-                          <a class="popup-with-move-anim" href="#HCI"><div class="element-item-overlay"><span>HCI</span></div><img src="images/project-3.jpg" alt="alternative"></a>
+                          <a class="popup-with-move-anim" href="#HCI"><div class="element-item-overlay"><span>HCI</span></div><img src="images/HCI.png" alt="alternative"></a>
                       </div>
+                      <div class="element-item Achievement">
+                        <a class="popup-with-move-anim" href="#Achievement_AchievementTable"><div class="element-item-overlay"><span>Achievement Table</span></div><img src="images/AchievementTable.png" alt="alternative"></a>
+                    </div>
+                    <div class="element-item Achievement">
+                        <a class="popup-with-move-anim" href="#Achievement_ContributionTable"><div class="element-item-overlay"><span>Contribution Table</span></div><img src="images/ContributionTable.png" alt="alternative"></a>
+                    </div>
                       <!-- <div class="element-item HCI">
                           <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Van Moose</span></div><img src="images/project-4.jpg" alt="alternative"></a>
                       </div>
@@ -279,12 +285,6 @@
                       </div>
                       <div class="element-item Prototype">
                           <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span>Spark Events</span></div><img src="images/project-6.jpg" alt="alternative"></a>
-                      </div>
-                      <div class="element-item Achievement">
-                          <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Casual Wear</span></div><img src="images/project-7.jpg" alt="alternative"></a>
-                      </div>
-                      <div class="element-item Achievement">
-                          <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span>Zazoo Apps</span></div><img src="images/project-8.jpg" alt="alternative"></a>
                       </div> -->
                   </div> <!-- end of grid -->
                   <!-- end of filter -->
@@ -306,6 +306,9 @@
               <h3>MosCoW Analysis</h3>
               <hr class="line-heading">
               <p>All requirements are important, but they are prioritized to deliver the greatest and most immediate business benefits early. We will initially try to deliver all the Must have, Should have and Could have requirements but the Should and Could requirements will be the first to be removed if the delivery timescale looks threatened.</p>
+              <div id="MosCoW" style = "display: contents">
+                <a class="btn-solid-reg" href="images/MoSCoW_Complete.png">DETAILS</a> 
+              </div>
               <a class="btn-outline-reg mfp-close as-button" href="#ResearchHCIPrototype">BACK</a> 
           </div> <!-- end of col -->
       </div> <!-- end of row -->
@@ -462,46 +465,36 @@ solutions/indoor-positioning-systems </pre>
   </div>
 
   <!-- Lightbox -->
-  <div id="Prototype" class="lightbox-basic zoom-anim-dialog mfp-hide">
+  <div id="Achievement_AchievementTable" class="lightbox-basic zoom-anim-dialog mfp-hide frostedGlass">
       <div class="row">
           <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
           <div class="col-lg-8">
-              <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
+              <img class="img-fluid" src="images/AchievementTable.png" alt="alternative">
           </div> <!-- end of col -->
           <div class="col-lg-4">
-              <h3>BoomBap Audio</h3>
+              <h3>Achievement Table</h3>
               <hr class="line-heading">
-              <h6>Strategy Development</h6>
-              <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
-              <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
-              <div class="testimonial-container">
-                  <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
-                  <p class="testimonial-author">General Manager</p>
-              </div>
-              <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+              <p>A achievement table to list the MoSCowfeatures, the completed status, and contributors</p>
+            <div id="AchievementTable" style = "display: contents">
+                <a class="btn-solid-reg" href="images/ContributionTable_Complete.png">DETAILS</a> 
+            </div>
+            <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
           </div> <!-- end of col -->
       </div> <!-- end of row -->
   </div> <!-- end of lightbox-basic -->
   <!-- end of lightbox -->
 
   <!-- Lightbox -->
-  <div id="Achievement" class="lightbox-basic zoom-anim-dialog mfp-hide">
+  <div id="Achievement_ContributionTable" class="lightbox-basic zoom-anim-dialog mfp-hide frostedGlass">
       <div class="row">
           <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
           <div class="col-lg-8">
-              <img class="img-fluid" src="images/project-4.jpg" alt="alternative">
+              <img class="img-fluid" src="images/ContributionTable.png" alt="alternative">
           </div> <!-- end of col -->
           <div class="col-lg-4">
-              <h3>Van Moose</h3>
+              <h3>Contribution Table</h3>
               <hr class="line-heading">
-              <h6>Strategy Development</h6>
-              <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
-              <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
-              <div class="testimonial-container">
-                  <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
-                  <p class="testimonial-author">General Manager</p>
-              </div>
-              <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+              <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
           </div> <!-- end of col -->
       </div> <!-- end of row -->
   </div> <!-- end of lightbox-basic -->
@@ -612,6 +605,6 @@ solutions/indoor-positioning-systems </pre>
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script src="Resources\Scripts\lightgallery.js"></script>
     <script src="Resources\Scripts\lg-fullscreen.min.js"></script>
-    <script src="Resources\Scripts\HCI.js"></script>
+    <script src="Resources\Scripts\Slides.js"></script>
 </body>
 </html>
