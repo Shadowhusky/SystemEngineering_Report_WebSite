@@ -888,6 +888,7 @@ input[type='checkbox'] {
 }
 
 .cards-1 .card-title {
+	width: 20vw;
 	margin-bottom: 0.625rem;
 	color: orangered;
 }
