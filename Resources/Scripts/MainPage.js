@@ -198,7 +198,7 @@
 
 	function showContent(content)
 	{
-		window.scrollTo(0, $("#Background_Home")[0].clientHeight*(content+1));
+		window.scrollTo(0, $("#Background_Home")[0].clientHeight*4);
 	}
 
 	var closeDetailsWindow = function(personID){
