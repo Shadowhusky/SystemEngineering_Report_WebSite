@@ -12,6 +12,11 @@
     top: 225vh;
 	left: 29.5vw;
 }
+.frostedGlass {
+	background-color: black;
+    backdrop-filter: blur(6px);
+    opacity: 0.7;
+}
 .GroupMember{
 	position: absolute;
 	z-index: 1;

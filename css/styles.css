@@ -84,7 +84,7 @@ h2 {
 }
 
 h3 {
-	color: #484a46;
+	color: crimson;
 	font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
 }
 
@@ -484,7 +484,6 @@ input[type='checkbox'] {
 /* Fade-move Animation For Lightbox - Magnific Popup */
 /* at start */
 .my-mfp-slide-bottom .zoom-anim-dialog {
-	opacity: 0;
 	transition: all 0.2s ease-out;
 	-webkit-transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
 	-ms-transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
@@ -493,7 +492,6 @@ input[type='checkbox'] {
 
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
-	opacity: 1;
 	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
 	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0); 
 	transform: translateY(0) perspective(37.5rem) rotateX(0); 
@@ -1455,6 +1453,7 @@ input[type='checkbox'] {
 
 .lightbox-basic .testimonial-text {
 	margin-bottom: 0.5rem;
+	color: black;
 }
 
 .lightbox-basic .testimonial-author {
