@@ -63,7 +63,18 @@ body{
 	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
 	background-color: rgba(0,0,0,0.3);
 }
-
+.referenceText {
+	font-size: 0.1vw; 
+	color:blue;
+	text-decoration: underline;
+}
+.CentralizeAndShrink {
+	width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
 #loading_Main {
 	position:fixed;
 	z-index:10;
