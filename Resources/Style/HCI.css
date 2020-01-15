@@ -10,11 +10,15 @@
     left: 50%;
 }
 
-.HCIThumb { 
+.ThumbImage { 
     width: 12vw;
 }
 
-#HCI {
+.ThumbImage_Small { 
+    width: 8vw;
+}
+
+.SlidesContainer {
     background: none;
     padding-bottom: 30%;
     backdrop-filter: blur(6px);
