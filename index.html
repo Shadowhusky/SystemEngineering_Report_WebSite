@@ -12,13 +12,14 @@
 <script type="text/javascript" src="Resources\Scripts\Jquery.js"></script>
  
 <link rel="stylesheet" type="text/css" href="Resources\Style\coming-sssoon.css">    
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
-  <link href="css/fontawesome-all.css" rel="stylesheet">
-  <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-  <link href="css/bootstrap.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+<link href="css/fontawesome-all.css" rel="stylesheet">
+<link href="css/swiper.css" rel="stylesheet">
+<link href="css/magnific-popup.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="Resources\Style\lightgallery.css">
 
 <script type="text/javascript" src="Resources\Scripts\MainPage.js"></script>
 <script type="text/javascript" src="Resources\Scripts\Prototype.js"></script>
@@ -29,6 +30,7 @@
 <link rel="stylesheet" type="text/css" href="Resources\Style\Prototype.css">
 <link rel="stylesheet" type="text/css" href="Resources\Style\detailWindow.css">
 <link rel="stylesheet" type="text/css" href="Resources\Style\Several.css">
+<link rel="stylesheet" type="text/css" href="Resources\Style\HCI.css">
 
     <!--     Fonts     -->
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
@@ -259,11 +261,11 @@
                       </div>
                       <div class="element-item Research">
                         <a class="popup-with-move-anim" href="#Research_HERE"><div class="element-item-overlay"><span>HERE</span></div><img src="images/HERE.png" alt="alternative"></a>
-                    </div>
-                      <!-- <div class="element-item HCI">
-                          <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>BoomBap Audio</span></div><img src="images/project-3.jpg" alt="alternative"></a>
                       </div>
                       <div class="element-item HCI">
+                          <a class="popup-with-move-anim" href="#HCI"><div class="element-item-overlay"><span>HCI</span></div><img src="images/project-3.jpg" alt="alternative"></a>
+                      </div>
+                      <!-- <div class="element-item HCI">
                           <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Van Moose</span></div><img src="images/project-4.jpg" alt="alternative"></a>
                       </div>
                       <div class="element-item Prototype">
@@ -437,26 +439,21 @@ solutions/indoor-positioning-systems </pre>
 
   <!-- Lightbox -->
   <div id="HCI" class="lightbox-basic zoom-anim-dialog mfp-hide">
-      <div class="row">
-          <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-          <div class="col-lg-8">
-              <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
-          </div> <!-- end of col -->
-          <div class="col-lg-4">
-              <h3>Classic Industry</h3>
-              <hr class="line-heading">
-              <h6>Strategy Development</h6>
-              <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
-              <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
-              <div class="testimonial-container">
-                  <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
-                  <p class="testimonial-author">General Manager</p>
-              </div>
-              <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of lightbox-basic -->
-  <!-- end of lightbox -->
+    <div id="lightgallery">
+        <a href="Resources/Images/HCI/0.png">
+            <img class="HCIThumb" src="Resources/Images/HCI/0.png">
+        </a>
+        <a href="Resources/Images/HCI/1.png">
+            <img class="HCIThumb" src="Resources/Images/HCI/1.png">
+        </a>
+        <a href="Resources/Images/HCI/2.png">
+            <img class="HCIThumb" src="Resources/Images/HCI/2.png">
+        </a>
+        <a href="Resources/Images/HCI/3.png">
+            <img class="HCIThumb" src="Resources/Images/HCI/3.png">
+        </a>
+    </div>
+  </div>
 
   <!-- Lightbox -->
   <div id="Prototype" class="lightbox-basic zoom-anim-dialog mfp-hide">
@@ -597,8 +594,6 @@ solutions/indoor-positioning-systems </pre>
   <!-- end of lightbox -->
   <!-- end of project lightboxes -->
 
-
-
     <!-- Scripts -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
@@ -609,5 +604,8 @@ solutions/indoor-positioning-systems </pre>
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="Resources\Scripts\lightgallery.js"></script>
+    <script src="Resources\Scripts\lg-fullscreen.min.js"></script>
+    <script src="Resources\Scripts\HCI.js"></script>
 </body>
 </html>

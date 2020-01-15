@@ -1,0 +1,21 @@
+#lightgallery {
+    width: 48.7vw;
+    height: 50vh;
+    z-index: 5;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.HCIThumb { 
+    width: 12vw;
+}
+
+#HCI {
+    background: none;
+    padding-bottom: 30%;
+    backdrop-filter: blur(6px);
+}
