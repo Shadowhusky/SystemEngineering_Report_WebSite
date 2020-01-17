@@ -206,6 +206,7 @@
 		animateCSS(personID,"floatAndShape_Reverse fast",function(){
 			$(personID)[0].style.zIndex="2";
 			$(personID)[0].style.borderRadius="0";
+			$(personID)[0]
 		},1);
 		$('.DetailsWindow').replaceWith($('.DetailsWindow').clone());	//Remove All listener;
 	};
