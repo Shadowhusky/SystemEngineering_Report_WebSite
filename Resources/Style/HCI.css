@@ -8,6 +8,7 @@
     transform: translateX(-50%) translateY(-50%);
     top: 50%;
     left: 50%;
+    backdrop-filter: blur(6px);
 }
 
 .ThumbImage { 
@@ -21,5 +22,4 @@
 .SlidesContainer {
     background: none;
     padding-bottom: 30%;
-    backdrop-filter: blur(6px);
 }
