@@ -1451,12 +1451,12 @@ input[type='checkbox'] {
 	margin-bottom: 2.125rem;
 	padding: 1.125rem 1.5rem 1.125rem 1.5rem;
 	border-radius: 0.25rem;
-	background-color: #fbfbfb;
+	background-color: rgba(10,50,100,0.7);
 }
 
 .lightbox-basic .testimonial-text {
 	margin-bottom: 0.5rem;
-	color: black;
+	color: white;
 }
 
 .lightbox-basic .testimonial-author {
