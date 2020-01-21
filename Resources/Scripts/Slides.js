@@ -32,3 +32,7 @@ lightGallery(document.getElementById('SystemArchitectureDiagram'),{
     mode: 'lg-fade',
     cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
 });
+lightGallery(document.getElementById('ContributionTable'),{
+    mode: 'lg-fade',
+    cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
+});
