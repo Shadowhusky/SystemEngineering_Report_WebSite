@@ -4,7 +4,7 @@
 	var main_Anime_Finished = false;
 	var selectedContent = 3;
 	var contentsBackground_Anime_Finished;
-
+	var selectedPersonID;
 	var groupMatesInfo = [["Richard Liao","a983974247@gmail.com","UI Designer/Front End Developer/Tester​<br/><br/>Developed the report website and the front-end of the APP"],	//Name,Email,Contribution
 						  ["Yusen Li","zcablil@ucl.ac.uk","<br/>UI Designer/Report Editor/Researcher <br/><br/>Participated the XD design of the prototype, did research, Wrote and edited the report"],
 						  ["Valentin Gorbunov","valentin.gorbunov.17@ucl.ac.uk","<br/>Team Leader/Back End Developer/Client liasion​<br/><br/>Developed the Back-End of the APP and makes communications with client."]];
@@ -103,6 +103,7 @@
 			},1);
 			window.scrollTo(0, 0);
 			playAnime_Prototype();
+			$(".main")[0].addEventListener("click", function(){closeDetailsWindow(selectedPersonID);});
 		}
 	}
 	
@@ -206,7 +207,6 @@
 		animateCSS(personID,"floatAndShape_Reverse fast",function(){
 			$(personID)[0].style.zIndex="2";
 			$(personID)[0].style.borderRadius="0";
-			$(personID)[0]
 		},1);
 		$('.DetailsWindow').replaceWith($('.DetailsWindow').clone());	//Remove All listener;
 	};
@@ -247,12 +247,12 @@
 			$(".DetailsWindow")[0].addEventListener("click", function(){closeDetailsWindow(personID);});
 		},1);
 
+		selectedPersonID = personID;
+
 		animateCSS("#GroupMember_"+name+"_Image","floatAndShape",function(){
 			person.style.zIndex="4";
 			person.style.borderRadius="50%";
 			$("#HomePage")[0].insertBefore(trigger,$("#HomePage")[0].children[0]);
 		},1);
-
-		
 		
 	}
