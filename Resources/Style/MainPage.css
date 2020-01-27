@@ -67,6 +67,10 @@ body{
     overflow-y: scroll;
     max-height: 15vh;
 }
+.SmallTexts {
+	font-size: 0.6vw;
+	opacity: 0.6;
+}
 .referenceText {
 	font-size: 0.1vw; 
 	color:forestgreen;
