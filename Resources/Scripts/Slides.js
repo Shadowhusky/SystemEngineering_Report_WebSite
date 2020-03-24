@@ -10,6 +10,14 @@ lightGallery(document.getElementById('Appendix_BiWeekReport_2_Slides'),{
     mode: 'lg-fade',
     cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
 });
+lightGallery(document.getElementById('Appendix_BiWeekReport_3_Slides'),{
+    mode: 'lg-fade',
+    cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
+});
+lightGallery(document.getElementById('Appendix_BiWeekReport_4_Slides'),{
+    mode: 'lg-fade',
+    cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
+});
 lightGallery(document.getElementById('AchievementTable'),{
     mode: 'lg-fade',
     cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
