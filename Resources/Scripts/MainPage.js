@@ -112,7 +112,7 @@
 				$( "#button_" + selectedPart ).addClass('is-checked');
 			});
 
-			
+
 			//Hide loading window
 			animateCSS("#loading_Main","fadeOut slow",function(){
 				$("#loading_Main")[0].style.display="none";
@@ -153,7 +153,7 @@
 		changeVisiblility(".Background_Appendix",1);
 		animateCSS("#Background_Home","fadeIn_Cust",0,1);
 		animateCSS(".Background_Appendix","flipInX slow",0,1);
-		for(let i=0; i<6; i++)
+		for(let i=0; i<7; i++)
 		{	
 			changeVisiblility("#Appendix_"+i,1);
 			setAnimeDelay("#Appendix_"+i,i/8);

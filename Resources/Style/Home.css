@@ -120,79 +120,19 @@
     overflow: hidden;
 	z-index: 10;
 	font-size: 1.1vw;
+	display: flex;
 }
-.Requirements {
-	cursor: pointer;
-	position: absolute;
-	overflow: visible;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Microsoft Yi Baiti;
-	font-style: normal;
-	font-weight: normal;
-	left: 0.5vw;
-	color: rgba(255,255,255,1);
-}
-.Research {
-	cursor: pointer;
-	position: absolute;
-	left: 8vw;
-	overflow: visible;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Microsoft Yi Baiti;
-	font-style: normal;
-	font-weight: normal;
-	color: rgba(255,255,255,1);	
-}
-.HCI {
-	cursor: pointer;
-	position: absolute;
-	left: 14vw;
-	top: 0;
-	overflow: visible;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Microsoft Yi Baiti;
-	font-style: normal;
-	font-weight: normal;
-	color: rgba(255,255,255,1);
-}
-.Prototype {
-	cursor: pointer;
-	position: absolute;
-	left: 18vw;
-	overflow: visible;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Microsoft Yi Baiti;
-	font-style: normal;
-	font-weight: normal;
-	color: rgba(255,255,255,1);
-}
-.Achievement {
-	cursor: pointer;
-	position: absolute;
-	left: 24vw;
-	overflow: visible;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Microsoft Yi Baiti;
-	font-style: normal;
-	font-weight: normal;
-	color: rgba(255,255,255,1);
-}
-.Plan {
-	cursor: pointer;
-	position: absolute;
-	left: 32vw;
-	overflow: visible;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Microsoft Yi Baiti;
-	font-style: normal;
-	font-weight: normal;
-	color: rgba(255,255,255,1);
+
+.Appendix_Element {
+    cursor: pointer;
+    overflow: visible;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Microsoft Yi Baiti;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255,255,255,1);
+	margin: 0 0.73vw 0 0.73vw;
 }
 
 #introduction {
