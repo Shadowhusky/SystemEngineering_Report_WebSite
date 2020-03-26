@@ -97,6 +97,22 @@
 		elementsLoaded+=count;
 		if(elementsLoaded==elementsNeedToBeLoaded)
 		{	
+			//Added click event for filtering to each appendix elements
+			var $grid = $('.grid').isotope({
+				// options
+				itemSelector: '.element-item',
+				layoutMode: 'fitRows'
+			});
+			// filter items on button click
+			$('.navigationBarElement').on( 'click', function() {
+				var selectedPart = $(this)[0].children[0].innerHTML;
+				var filterValue = "." + selectedPart;
+				$grid.isotope({ filter: filterValue });
+				$('.button-group').find('.is-checked').removeClass('is-checked');
+				$( "#button_" + selectedPart ).addClass('is-checked');
+			});
+
+			
 			//Hide loading window
 			animateCSS("#loading_Main","fadeOut slow",function(){
 				$("#loading_Main")[0].style.display="none";
@@ -124,6 +140,7 @@
 					node.classList.remove('animated', "faster");
 					animateCSS("#Appendix_"+index,"lostFocus faster",0,1);
 				});
+
 				main_Anime_Finished = true;
 				
 				changeVisiblility(".GroupMember",1);
