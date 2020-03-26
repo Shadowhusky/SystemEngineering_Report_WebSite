@@ -5,9 +5,9 @@
 	var selectedContent = 3;
 	var contentsBackground_Anime_Finished;
 	var selectedPersonID;
-	var groupMatesInfo = [["Richard Liao","a983974247@gmail.com","UI Designer/Front End Developer/Tester​<br/><br/>Developed the report website and the front-end of the APP"],	//Name,Email,Contribution
-						  ["Yusen Li","zcablil@ucl.ac.uk","<br/>UI Designer/Report Editor/Researcher <br/><br/>Participated the XD design of the prototype, did research, Wrote and edited the report"],
-						  ["Valentin Gorbunov","valentin.gorbunov.17@ucl.ac.uk","<br/>Team Leader/Back End Developer/Client liasion​<br/><br/>Developed the Back-End of the APP and makes communications with client."]];
+	var groupMatesInfo = [["Richard Liao","a983974247@gmail.com","UI Designer/Full Stack Developer/Tester​<br/><br/>Developed the report website and the Front-end & Time-Tracking-subsystem of the APP"],	//Name,Email,Contribution
+						  ["Yusen Li","zcablil@ucl.ac.uk","<br/>UI Designer/Report Editor/Back End Developer <br/><br/>Participated the XD design of the prototype, developed the notification feature in Time-Tracking-subsystem"],
+						  ["Valentin Gorbunov","valentin.gorbunov.17@ucl.ac.uk","<br/>Team Leader/Back End Developer/Client liasion​<br/><br/>Developed the navigation subsystem of the APP and makes communications with client"]];
 
 	window.scrollTo(0, 0);
 	
