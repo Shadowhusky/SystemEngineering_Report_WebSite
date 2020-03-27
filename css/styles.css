@@ -2372,7 +2372,8 @@ a:hover.back-to-top {
 	}
 
 	.filter .element-item .element-item-overlay span { 
-		top: 45%;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 	/* end of projects */
 

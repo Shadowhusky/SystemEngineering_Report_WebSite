@@ -115,11 +115,11 @@
     width: 50vw;
     height: 5vh;
     left: 2vw;
-    top: 98.8%;
+    top: 98.9%;
     transform: translateY(-50%);
     overflow: hidden;
 	z-index: 10;
-	font-size: 1.1vw;
+	font-size: 1vw;
 	display: flex;
 }
 
@@ -132,7 +132,7 @@
     font-style: normal;
     font-weight: normal;
     color: rgba(255,255,255,1);
-	margin: 0 0.73vw 0 0.73vw;
+	margin: 0 0.87vw 0 0.87vw;
 }
 
 #introduction {
