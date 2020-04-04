@@ -2364,7 +2364,10 @@ a:hover.back-to-top {
 	}
 	/* end of call me */
 
-
+	.formatText {
+		color: white;
+	}
+	
 	/* Projects */
 	.filter .element-item {
 		width: 17.3125em; /* to eliminate grid overflow problem on hard refresh */
