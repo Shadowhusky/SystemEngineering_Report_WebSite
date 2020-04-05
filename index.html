@@ -132,6 +132,9 @@
 			<div class="Appendix_Element navigationBarElement" id="Appendix_5" onclick="showContent(5)">
 				<span>Evaluation</span>
 			</div>
+            <div class="Appendix_Element navigationBarElement" id="Appendix_6" onclick="showContent(6)">
+				<span>Design</span>
+			</div>
 		</div>
 	</div>
 
@@ -252,6 +255,7 @@
                       <a class="button" id="button_HCI" data-filter=".HCI"><span>HCI</span></a>
                       <a class="button" id="button_Testing" data-filter=".Testing"><span>Testing</span></a>
                       <a class="button" id="button_Evaluation" data-filter=".Evaluation"><span>Evaluation</span></a>
+                      <a class="button" id="button_Design" data-filter=".Design"><span>Design</span></a>
                   </div> <!-- end of button group -->
                   <div class="grid">
                       <div class="element-item Appendix">
@@ -311,6 +315,9 @@
                     <div class="element-item Evaluation">
                         <a class="popup-with-move-anim" href="#Summary_Of_Achievements"><div class="element-item-overlay"><span>Summary Of Achievements​</span></div><img src="Resources/Images/Summary_Of_Achievements/1.png" alt="alternative"></a>
                     </div>
+                    <div class="element-item Design">
+                        <a class="popup-with-move-anim" href="#SystemArchitectureDiagram"><div class="element-item-overlay"><span>System Architecture diagram​</span></div><img src="Resources/Images/SystemArchitectureDiagram.png" alt="alternative"></a>
+                    </div>
                       <!-- <div class="element-item HCI">
                           <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Van Moose</span></div><img src="images/project-4.jpg" alt="alternative"></a>
                       </div>-->
@@ -322,6 +329,26 @@
   </div> <!-- end of container -->
   </div> <!-- end of filter -->
   <!-- end of projects -->
+
+    <!-- Lightbox -->
+    <div id="SystemArchitectureDiagram" class="lightbox-basic zoom-anim-dialog mfp-hide frostedGlass">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="Resources/Images/SystemArchitectureDiagram.png" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>System Architecture Diagram</h3>
+                <hr class="line-heading">
+                <p>System architecture diagram shows the relationship between different components</p>
+                <div id="SystemArchitectureDiagram_Slide" style = "display: contents">
+                    <a class="btn-solid-reg" href="Resources/Images/SystemArchitectureDiagram.png">DETAILS</a> 
+                </div>
+                <a class="btn-outline-reg mfp-close as-button" href="#ResearchHCIPrototype">BACK</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
 
     <!-- Lightbox -->
     <div id="Plan_Term2" class="lightbox-basic zoom-anim-dialog mfp-hide frostedGlass">
