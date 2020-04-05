@@ -18,3 +18,8 @@
 p {
     color: white;
 }
+
+#Critical_Evaluation h5 {
+    font-size: 1.25rem;
+    color: lawngreen;
+}
