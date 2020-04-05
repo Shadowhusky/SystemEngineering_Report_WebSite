@@ -6,6 +6,10 @@ lightGallery(document.getElementById('Summary_Of_Achievements_Slides'),{
     mode: 'lg-fade',
     cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
 });
+lightGallery(document.getElementById('Testing_Testing_Slides'),{
+    mode: 'lg-fade',
+    cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
+});
 lightGallery(document.getElementById('Appendix_BiWeekReport_1_Slides'),{
     mode: 'lg-fade',
     cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'

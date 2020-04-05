@@ -117,19 +117,19 @@
             <div class="Appendix_Element navigationBarElement" id="Appendix_0" onclick="showContent(0)">
 				<span>Appendix</span>
 			</div>
-			<div class="Appendix_Element navigationBarElement" id="Appendix_1" onclick="showContent(0)">
+			<div class="Appendix_Element navigationBarElement" id="Appendix_1" onclick="showContent(1)">
 				<span>Requirements</span>
 			</div>
-			<div class="Appendix_Element navigationBarElement" id="Appendix_2" onclick="showContent(1)">
+			<div class="Appendix_Element navigationBarElement" id="Appendix_2" onclick="showContent(2)">
 				<span>Research</span>
 			</div>
-            <div class="Appendix_Element navigationBarElement" id="Appendix_3" onclick="showContent(2)">
+            <div class="Appendix_Element navigationBarElement" id="Appendix_3" onclick="showContent(3)">
                 <span>HCI</span>
             </div>
-			<div class="Appendix_Element navigationBarElement" id="Appendix_4" onclick="showContent(3)">
-				<span>Prototype</span>
+			<div class="Appendix_Element navigationBarElement" id="Appendix_4" onclick="showContent(4)">
+				<span>Testing</span>
 			</div>
-			<div class="Appendix_Element navigationBarElement" id="Appendix_6" onclick="showContent(5)">
+			<div class="Appendix_Element navigationBarElement" id="Appendix_5" onclick="showContent(5)">
 				<span>Evaluation</span>
 			</div>
 		</div>
@@ -250,7 +250,7 @@
                       <a class="button" id="button_Requirements" data-filter=".Requirements"><span>Requirements</span></a>
                       <a class="button" id="button_Research" data-filter=".Research"><span>Research</span></a>
                       <a class="button" id="button_HCI" data-filter=".HCI"><span>HCI</span></a>
-                      <a class="button" id="button_Prototype" data-filter=".Prototype"><span>Prototype</span></a>
+                      <a class="button" id="button_Testing" data-filter=".Testing"><span>Testing</span></a>
                       <a class="button" id="button_Evaluation" data-filter=".Evaluation"><span>Evaluation</span></a>
                   </div> <!-- end of button group -->
                   <div class="grid">
@@ -299,8 +299,8 @@
                       <div class="element-item HCI">
                           <a class="popup-with-move-anim" href="#HCI"><div class="element-item-overlay"><span>HCI</span></div><img src="images/HCI.png" alt="alternative"></a>
                       </div>
-                    <div class="element-item Prototype">
-                        <a class="popup-with-move-anim" href="#Achievement_SystemArchitectureDiagram"><div class="element-item-overlay"><span>System Architecture Diagram</span></div><img src="images/SystemArchitectureDiagram.png" alt="alternative"></a>
+                    <div class="element-item Testing">
+                        <a class="popup-with-move-anim" href="#Testing_Testing"><div class="element-item-overlay"><span>Testing</span></div><img src="Resources/Images/Testing/1.png" alt="alternative"></a>
                     </div>
                     <div class="element-item Evaluation">
                         <a class="popup-with-move-anim" href="#Plan_Term2"><div class="element-item-overlay"><span>Future work​</span></div><img src="images/Plan.jpg" alt="alternative"></a>
@@ -310,9 +310,6 @@
                     </div> 
                     <div class="element-item Evaluation">
                         <a class="popup-with-move-anim" href="#Summary_Of_Achievements"><div class="element-item-overlay"><span>Summary Of Achievements​</span></div><img src="Resources/Images/Summary_Of_Achievements/1.png" alt="alternative"></a>
-                    </div>
-                    <div class="element-item Prototype">
-                        <a href="Resources/Prototype/WorkSpaceGuru.zip" download><div class="element-item-overlay"><span>Download</span></div><img src="images/Download.png" alt="alternative"></a>
                     </div>
                       <!-- <div class="element-item HCI">
                           <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Van Moose</span></div><img src="images/project-4.jpg" alt="alternative"></a>
@@ -403,13 +400,13 @@ have another 6 months:​
     <div id="Summary_Of_Achievements" class="lightbox-basic zoom-anim-dialog mfp-hide SlidesContainer">
     <div class="HCISlidesClass" id="Summary_Of_Achievements_Slides">
         <a href="Resources/Images/Summary_Of_Achievements/1.png">
-            <img class="ThumbImage_Small" src="Resources/Images/Summary_Of_Achievements/1.png">
+            <img class="ThumbImage" src="Resources/Images/Summary_Of_Achievements/1.png">
         </a>
         <a href="Resources/Images/Summary_Of_Achievements/2.png">
-            <img class="ThumbImage_Small" src="Resources/Images/Summary_Of_Achievements/2.png">
+            <img class="ThumbImage" src="Resources/Images/Summary_Of_Achievements/2.png">
         </a>
         <a href="Resources/Images/Summary_Of_Achievements/3.png">
-            <img class="ThumbImage_Small" src="Resources/Images/Summary_Of_Achievements/3.png">
+            <img class="ThumbImage" src="Resources/Images/Summary_Of_Achievements/3.png">
         </a>
     </div>
     </div>
@@ -516,6 +513,21 @@ have another 6 months:​
         </div>
     </div>
 
+    <!-- Lightbox -->
+    <div id="Testing_Testing" class="lightbox-basic zoom-anim-dialog mfp-hide SlidesContainer">
+        <div class="HCISlidesClass" id="Testing_Testing_Slides">
+            <a href="Resources/Images/Testing/1.png">
+                <img class="ThumbImage_Small" src="Resources/Images/Testing/1.png">
+            </a>
+            <a href="Resources/Images/Testing/2.png">
+                <img class="ThumbImage_Small" src="Resources/Images/Testing/2.png">
+            </a>
+            <a href="Resources/Images/Testing/3.png">
+                <img class="ThumbImage_Small" src="Resources/Images/Testing/3.png">
+            </a>
+        </div>
+    </div>
+ 
     <!-- Lightbox -->
     <div id="Requirements_MosCoW" class="lightbox-basic zoom-anim-dialog mfp-hide frostedGlass">
       <div class="row">
@@ -783,99 +795,6 @@ solutions/indoor-positioning-systems </pre>
         </a>
     </div>
   </div>
-
-  <!-- Lightbox -->
-  <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
-      <div class="row">
-          <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-          <div class="col-lg-8">
-              <img class="img-fluid" src="images/project-5.jpg" alt="alternative">
-          </div> <!-- end of col -->
-          <div class="col-lg-4">
-              <h3>Joy Moments</h3>
-              <hr class="line-heading">
-              <h6>Strategy Development</h6>
-              <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
-              <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
-              <div class="testimonial-container">
-                  <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
-                  <p class="testimonial-author">General Manager</p>
-              </div>
-              <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of lightbox-basic -->
-  <!-- end of lightbox -->
-
-  <!-- Lightbox -->
-  <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
-      <div class="row">
-          <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-          <div class="col-lg-8">
-              <img class="img-fluid" src="images/project-6.jpg" alt="alternative">
-          </div> <!-- end of col -->
-          <div class="col-lg-4">
-              <h3>Spark Events</h3>
-              <hr class="line-heading">
-              <h6>Strategy Development</h6>
-              <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
-              <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
-              <div class="testimonial-container">
-                  <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
-                  <p class="testimonial-author">General Manager</p>
-              </div>
-              <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of lightbox-basic -->
-  <!-- end of lightbox -->
-
-  <!-- Lightbox -->
-  <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
-      <div class="row">
-          <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-          <div class="col-lg-8">
-              <img class="img-fluid" src="images/project-7.jpg" alt="alternative">
-          </div> <!-- end of col -->
-          <div class="col-lg-4">
-              <h3>Casual Wear</h3>
-              <hr class="line-heading">
-              <h6>Strategy Development</h6>
-              <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
-              <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
-              <div class="testimonial-container">
-                  <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
-                  <p class="testimonial-author">General Manager</p>
-              </div>
-              <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of lightbox-basic -->
-  <!-- end of lightbox -->
-
-  <!-- Lightbox -->
-  <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
-      <div class="row">
-          <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-          <div class="col-lg-8">
-              <img class="img-fluid" src="images/project-8.jpg" alt="alternative">
-          </div> <!-- end of col -->
-          <div class="col-lg-4">
-              <h3>Zazoo Apps</h3>
-              <hr class="line-heading">
-              <h6>Strategy Development</h6>
-              <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
-              <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
-              <div class="testimonial-container">
-                  <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
-                  <p class="testimonial-author">General Manager</p>
-              </div>
-              <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of lightbox-basic -->
-  <!-- end of lightbox -->
-  <!-- end of project lightboxes -->
 
     <!-- Scripts -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
