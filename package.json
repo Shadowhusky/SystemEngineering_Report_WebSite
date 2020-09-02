@@ -497,7 +497,7 @@
     "saxes": "^3.1.11",
     "scheduler": "^0.18.0",
     "semver": "^5.7.1",
-    "serialize-to-js": "^1.2.2",
+    "serialize-to-js": "^3.1.1",
     "set-blocking": "^2.0.0",
     "set-value": "^2.0.1",
     "setimmediate": "^1.0.5",
